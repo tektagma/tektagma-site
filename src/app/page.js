@@ -16,7 +16,7 @@ export default function Home() {
           <Link href="/" className="block relative w-[150px] h-[40px] sm:w-[180px] sm:h-[50px]">
             <div className="relative w-full h-full">
               <Image
-                src="/tektagma-site-logo.webp"
+                src="/tektagma-logo.webp"
                 alt="TekTagma logo"
                 fill
                 priority
@@ -60,7 +60,7 @@ export default function Home() {
       <main className="row-start-2 text-center sm:text-left flex flex-col items-center sm:items-start gap-6">
         <div className="relative w-[240px] h-[100px] sm:w-[300px] sm:h-[120px]">
           <Image
-            src="/tektagma-site-logo.webp"
+            src="/tektagma-logo.webp"
             alt="TekTagma hero logo"
             fill
             priority
