@@ -9,33 +9,75 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+jspm_packages/
+bower_components
 
 # testing
 /coverage
+.nyc_output
+*.lcov
 
-# next.js
+# build outputs
 /.next/
-/out/
+out/
+build/
+dist/
 
-# production
-/build
+# logs & reports
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # misc
 .DS_Store
 *.pem
+*.tgz
+.cache
+.parcel-cache
+.temp
+.tern-port
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
+# environment variables
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# vercel
+.vercel
+
+# other build tools
+.nuxt
+.vuepress/dist
+.docusaurus
+.serverless/
+.fusebox/
+.dynamodb/
+.vscode-test
+
+# cache files
+.npm
+.eslintcache
+.stylelintcache
+.yarn-integrity
+.web_modules/
+.vitepress/cache
+.vitepress/dist
+
+# optional
+public/
