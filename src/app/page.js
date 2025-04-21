@@ -12,15 +12,17 @@ export default function Home() {
       {/* 🔝 Top Navigation with Logo */}
       <header className="fixed top-0 left-0 w-full bg-white border-b border-gray-200 shadow-sm z-50">
         <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          {/* Logo with Link */}
-          <Link href="/" className="relative w-[150px] h-[40px] sm:w-[180px] sm:h-[50px]">
-            <Image
-              src="/tektagma-site-logo.webp"
-              alt="TekTagma logo"
-              fill
-              priority
-              style={{ objectFit: "contain" }}
-            />
+          {/* Logo with wrapper */}
+          <Link href="/" className="block relative w-[150px] h-[40px] sm:w-[180px] sm:h-[50px]">
+            <div className="relative w-full h-full">
+              <Image
+                src="/tektagma-site-logo.webp"
+                alt="TekTagma logo"
+                fill
+                priority
+                style={{ objectFit: "contain" }}
+              />
+            </div>
           </Link>
 
           {/* Desktop Nav */}
