@@ -10,6 +10,10 @@ The TekTagma marketing site includes the following pages:
 
 Navigation is defined in the home page header component.
 
+## Security Updates
+
+- **January 2025**: Upgraded Next.js to 15.3.6 to address CVE-2025-66478 (RCE vulnerability in React Server Components protocol).
+
 ## Getting Started
 
 First, run the development server:
