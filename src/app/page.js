@@ -28,6 +28,7 @@ export default function Home() {
           {/* Desktop Nav */}
           <ul className="hidden sm:flex gap-6 text-sm font-medium text-gray-700">
             <li><Link href="/">Home</Link></li>
+            <li><Link href="/products">Products</Link></li>
             <li><Link href="#services">Services</Link></li>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/contact">Contact</Link></li>
@@ -49,6 +50,7 @@ export default function Home() {
         {menuOpen && (
           <ul className="sm:hidden flex flex-col items-center gap-4 p-4 bg-white border-t border-gray-200">
             <li><Link href="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+            <li><Link href="/products" onClick={() => setMenuOpen(false)}>Products</Link></li>
             <li><Link href="#services" onClick={() => setMenuOpen(false)}>Services</Link></li>
             <li><Link href="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
             <li><Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
