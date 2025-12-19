@@ -1,6 +1,6 @@
 export default function ProductsPage() {
   return (
-    <main className="pt-[80px] min-h-screen p-10 text-center sm:text-left">
+    <main className="pt-24 min-h-screen p-10 text-center sm:text-left">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-8">Products</h1>
         

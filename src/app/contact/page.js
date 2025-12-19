@@ -1,6 +1,6 @@
 export default function ContactPage() {
   return (
-    <main className="pt-[80px] min-h-screen p-10 flex flex-col items-center justify-center text-center">
+    <main className="pt-24 min-h-screen p-10 flex flex-col items-center justify-center text-center">
       <h1 className="text-4xl font-bold mb-4">Let&apos;s Connect</h1>
       <p className="text-lg text-gray-600 max-w-xl mb-6">
         Have a project in mind or need help with systems, CMS, or automation? Let&apos;s talk.
