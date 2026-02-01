@@ -28,6 +28,7 @@ export default function Navigation() {
           <li><Link href="/products">Products</Link></li>
           <li><Link href="/#services">Services</Link></li>
           <li><Link href="/about">About</Link></li>
+          <li><Link href="/careers">Careers</Link></li>
           <li><Link href="/contact">Contact</Link></li>
         </ul>
 
@@ -50,6 +51,7 @@ export default function Navigation() {
           <li><Link href="/products" onClick={() => setMenuOpen(false)}>Products</Link></li>
           <li><Link href="/#services" onClick={() => setMenuOpen(false)}>Services</Link></li>
           <li><Link href="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
+          <li><Link href="/careers" onClick={() => setMenuOpen(false)}>Careers</Link></li>
           <li><Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
         </ul>
       )}
