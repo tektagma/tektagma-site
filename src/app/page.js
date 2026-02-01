@@ -65,14 +65,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-
-      {/* 👣 Footer */}
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center text-sm text-gray-500">
-        <Link href="/contact" className="hover:underline">Contact</Link>
-        <Link href="/about" className="hover:underline">About</Link>
-        <Link href="/" className="hover:underline">Home</Link>
-        <p>&copy; {new Date().getFullYear()} TekTagma. All rights reserved.</p>
-      </footer>
     </div>
   );
 }
