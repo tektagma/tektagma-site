@@ -1,7 +1,19 @@
-import { createRequire } from "module";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { FlatCompat } from "@eslint/eslintrc";
 
-const require = createRequire(import.meta.url);
-const nextConfig = require("eslint-config-next/core-web-vitals");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-const eslintConfig = [...nextConfig];
-export default eslintConfig;
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+});
+
+const config = [
+  ...compat.extends("next/core-web-vitals"),
+  {
+    ignores: [".next/**", "node_modules/**"],
+  },
+];
+
+export default config;
