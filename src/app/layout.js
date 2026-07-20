@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "TekTagma",
   description: "Build better business systems with TekTagma.",
+  metadataBase: new URL("https://tektagma.com"),
 };
 
 export default function RootLayout({ children }) {
