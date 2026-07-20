@@ -44,12 +44,17 @@ export default function Home() {
                 We build structured, scalable CMS systems using React, Airtable, and Notion — tailored for your workflow.
               </p>
             </div>
-            <div className="p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+            <Link
+              href="/services/business-automation"
+              className="group block p-6 rounded-xl border-2 border-gray-900 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500 mb-2">Featured service</p>
               <h3 className="text-xl font-bold mb-2">Business Automation</h3>
               <p className="text-gray-600 text-sm">
-                Save hours every week with smart automation that connects your tools and streamlines operations.
+                Save hours every week with practical systems that capture work, connect your tools, and keep follow-up from slipping through.
               </p>
-            </div>
+              <span className="inline-block mt-5 text-sm font-semibold text-black group-hover:underline underline-offset-4">Explore Business Automation →</span>
+            </Link>
             <div className="p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
               <h3 className="text-xl font-bold mb-2">System Design & Consulting</h3>
               <p className="text-gray-600 text-sm">
