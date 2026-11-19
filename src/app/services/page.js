@@ -127,6 +127,12 @@ export default function ServicesPage() {
               </p>
             </article>
           </div>
+          <h3 className="mt-10 text-2xl font-bold tracking-tight text-navy">
+            Eliminate the Hidden Cost of Human Mistakes
+          </h3>
+          <p className="mt-3 max-w-4xl text-lg leading-8 text-muted">
+            When office staff rush through repetitive typing, mistakes happen—a wrong address sends crews to the wrong job site, a forgotten email delays your payment, and late receipts upset clients. Our system eliminates those costly dropped balls so every proposal, folder, and invoice goes out accurate and on time.
+          </p>
           <p className="mt-8 max-w-4xl text-lg leading-8 text-muted">
             $650 a month buys a reliable 24/7 back-office system: deposits billed on time, change orders not forgotten, and job records you can actually find when you need them.
           </p>

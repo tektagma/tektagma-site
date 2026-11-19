@@ -25,6 +25,10 @@ const problems = [
     title: "Bloated Software Lock-In",
     body: "Paying $1,000+/month for rigid construction platforms your field crew refuses to use.",
   },
+  {
+    title: "Costly Typos & Dropped Balls",
+    body: "One mistyped address sends a crew to the wrong site, and one forgotten invoice email delays your payout or frustrates a good customer. Manual data entry isn't just slow—human mistakes quietly drain your profit.",
+  },
 ];
 
 const outcomes = [
@@ -87,9 +91,18 @@ export default function Home() {
           <p className="mt-5 max-w-3xl text-lg leading-8 text-muted">
             If you have two office employees, a connected system lets you cut that administrative workload down to one. If you run a one-person office—or you are the office—it takes the repetitive paperwork off your plate. Either way, those hours shift from re-typing invoices and shuffling files to customers, bid follow-ups, and winning work.
           </p>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2">
-            {problems.map((item) => (
-              <article key={item.title} className="rounded-2xl border border-navy/10 bg-white p-6 shadow-sm">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-6">
+            {problems.map((item, index) => (
+              <article
+                key={item.title}
+                className={`rounded-2xl border border-navy/10 bg-white p-6 shadow-sm ${
+                  index < 3
+                    ? "lg:col-span-2"
+                    : index === 4
+                      ? "sm:col-span-2 lg:col-span-3"
+                      : "lg:col-span-3"
+                }`}
+              >
                 <h3 className="text-xl font-bold text-navy">{item.title}</h3>
                 <p className="mt-3 text-muted leading-7">{item.body}</p>
               </article>
