@@ -6,15 +6,17 @@ export default function BrandLockup({ variant = "light" }) {
 
   return (
     <span className="flex items-center gap-2.5 sm:gap-3">
-      <span className="relative block h-10 w-[132px] shrink-0 overflow-hidden rounded-md bg-white sm:h-11 sm:w-[150px]">
-        <Image
-          src="/tektagma-logo.webp"
-          alt="TekTagma logo"
-          fill
-          priority
-          sizes="150px"
-          style={{ objectFit: "contain" }}
-        />
+      <span className="flex shrink-0 items-center justify-center rounded-md bg-canvas p-1 sm:p-1.5">
+        <span className="relative block h-8 w-8 sm:h-9 sm:w-9">
+          <Image
+            src="/TekTagma-Logo.png"
+            alt="TekTagma logo"
+            fill
+            priority
+            sizes="36px"
+            style={{ objectFit: "contain" }}
+          />
+        </span>
       </span>
       <span className="flex min-w-0 flex-col leading-tight">
         <span
