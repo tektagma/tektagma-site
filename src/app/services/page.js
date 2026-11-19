@@ -100,6 +100,38 @@ export default function ServicesPage() {
           ))}
         </div>
 
+        <section className="mx-auto mt-12 max-w-6xl rounded-2xl border border-navy/10 bg-canvas px-6 py-10 sm:px-10 sm:py-12">
+          <p className="text-xs font-semibold tracking-[0.18em] text-amber uppercase">
+            THE BOTTOM-LINE MATH
+          </p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+            Why $650/Month Pays for Itself
+          </h2>
+          <p className="mt-3 text-2xl font-semibold tracking-tight text-navy sm:text-3xl">
+            Less Than Two Days of Office Payroll — Working for You 24/7
+          </p>
+          <p className="mt-5 max-w-4xl text-lg leading-8 text-muted">
+            Full-time office administration often runs $4,500–$6,000+ a month. Plenty of those hours still get lost to redundant data entry and invoicing—typing the same job into estimates, folders, and QuickBooks. At $650 a month, the retainer costs less than two days of that payroll, and it keeps working after the office is locked up.
+          </p>
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            <article className="rounded-2xl border border-navy/10 bg-white p-6 shadow-sm">
+              <h3 className="text-xl font-bold text-navy">Two-Person Office</h3>
+              <p className="mt-3 leading-7 text-muted">
+                If you have two people in the office, a connected system lets you streamline that admin load down to one. The thousands you save each month on a second admin salary can go back into the business—instead of redundant data entry.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-navy/10 bg-white p-6 shadow-sm">
+              <h3 className="text-xl font-bold text-navy">One-Person Office / Solo</h3>
+              <p className="mt-3 leading-7 text-muted">
+                If you are the office, or you have one admin doing everything, those hours spent re-typing invoices and chasing paper can go back to customer service, bid follow-ups, and sales.
+              </p>
+            </article>
+          </div>
+          <p className="mt-8 max-w-4xl text-lg leading-8 text-muted">
+            $650 a month buys a reliable 24/7 back-office system: deposits billed on time, change orders not forgotten, and job records you can actually find when you need them.
+          </p>
+        </section>
+
         <aside className="mx-auto mt-10 max-w-6xl rounded-2xl border border-amber/40 bg-navy px-6 py-8 text-white sm:px-10 sm:py-10">
           <p className="text-xs font-semibold tracking-[0.18em] text-amber uppercase">
             Data Security & U.S. Accountability

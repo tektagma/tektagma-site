@@ -85,7 +85,7 @@ export default function Home() {
             Stop Burning Payroll on Office Busywork
           </h2>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-muted">
-            If you have two office employees right now, a connected system lets you cut that administrative workload down to one—so your best people focus on winning bids and running jobs instead of shuffling paper.
+            If you have two office employees, a connected system lets you cut that administrative workload down to one. If you run a one-person office—or you are the office—it takes the repetitive paperwork off your plate. Either way, those hours shift from re-typing invoices and shuffling files to customers, bid follow-ups, and winning work.
           </p>
           <div className="mt-10 grid gap-5 sm:grid-cols-2">
             {problems.map((item) => (
