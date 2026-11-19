@@ -1,13 +1,47 @@
 import Link from "next/link";
+import BrandLockup from "./BrandLockup";
+import { NAV_LINKS, SITE } from "../lib/site";
 
 export default function Footer() {
   return (
-    <footer className="flex gap-6 flex-wrap items-center justify-center text-sm text-gray-500 py-8 px-6 border-t border-gray-200 mt-auto">
-      <Link href="/contact" className="hover:underline">Contact</Link>
-      <Link href="/about" className="hover:underline">About</Link>
-      <Link href="/careers" className="hover:underline">Careers</Link>
-      <Link href="/" className="hover:underline">Home</Link>
-      <p>&copy; {new Date().getFullYear()} TekTagma. All rights reserved.</p>
+    <footer className="mt-auto bg-navy text-white">
+      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="space-y-4">
+          <BrandLockup variant="light" />
+          <p className="max-w-sm text-sm leading-6 text-white/75">{SITE.footerTagline}</p>
+        </div>
+
+        <nav aria-label="Footer">
+          <p className="mb-4 text-xs font-semibold tracking-[0.18em] text-amber uppercase">
+            Navigate
+          </p>
+          <ul className="space-y-2 text-sm text-white/80">
+            {NAV_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="hover:text-white hover:underline underline-offset-4">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div>
+          <p className="mb-4 text-xs font-semibold tracking-[0.18em] text-amber uppercase">
+            Service area
+          </p>
+          <p className="text-sm leading-6 text-white/80">{SITE.serviceArea}</p>
+          <a
+            href={`mailto:${SITE.email}`}
+            className="mt-4 inline-block text-sm font-medium text-amber hover:underline underline-offset-4"
+          >
+            {SITE.email}
+          </a>
+        </div>
+      </div>
+      <div className="border-t border-white/10 px-6 py-6 text-center text-xs text-white/55">
+        {SITE.copyright}
+      </div>
     </footer>
   );
 }

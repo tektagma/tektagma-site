@@ -1,75 +1,148 @@
-'use client';
-import Image from "next/image";
 import Link from "next/link";
+import { btnPrimary, btnSecondaryOnDark } from "./lib/site";
+
+const trustItems = [
+  "Active CA Class B General Contractor’s License",
+  "100% Client Ownership of Data & Files",
+  "Enterprise-Grade Stack (Airtable • Make • QuickBooks)",
+];
+
+const problems = [
+  {
+    title: "Delayed Deposits & Slow Billing",
+    body: "Waiting days to type up estimates and manually re-enter invoices into QuickBooks slows down your cash flow.",
+  },
+  {
+    title: "Unbilled Change Orders",
+    body: "Verbal approvals in the field get forgotten before final billing, eating straight into your job profit.",
+  },
+  {
+    title: "Scattered Photos & Compliance Risks",
+    body: "Crew photos, permits, and dump receipts buried in text threads leave you exposed when inspectors or clients ask for proof months later.",
+  },
+  {
+    title: "Bloated Software Lock-In",
+    body: "Paying $1,000+/month for rigid construction platforms your field crew refuses to use.",
+  },
+];
+
+const outcomes = [
+  {
+    title: "Instant Proposals & eSignatures",
+    body: "Turn site-walk notes and photos into branded PDF proposals, dispatch them for legally binding electronic signature, and get notified the second they are signed.",
+  },
+  {
+    title: "Automatic Job Folders & Compliance",
+    body: "Every signed contract, change order, before/after crew photo, permit, and dump receipt is automatically sorted into standardized client folders and backed up.",
+  },
+  {
+    title: "Automated QuickBooks Online Billing",
+    body: "Automatically generate deposit invoices (including pass-through permit fees) and final balance invoices (with approved change orders) in QuickBooks without double data entry.",
+  },
+  {
+    title: "Field-to-Office Visibility",
+    body: "Simple mobile upload forms for field foremen and clean, role-based dashboards for owners, estimators, and office admins.",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="pt-[80px] grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-
-      {/* ✅ Main Content */}
-      <main className="row-start-2 text-center sm:text-left flex flex-col items-center sm:items-start gap-6">
-        <div className="relative w-[240px] h-[100px] sm:w-[300px] sm:h-[120px]">
-          <Image
-            src="/tektagma-logo.webp"
-            alt="TekTagma hero logo"
-            fill
-            priority
-            style={{ objectFit: "contain" }}
-          />
-        </div>
-
-        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900">
-          Build Better Business Systems
-        </h1>
-        <p className="text-lg text-gray-600 max-w-xl">
-          TekTagma designs custom CMS and automation solutions that help modern companies scale,
-          save time, and stay organized.
-        </p>
-        <Link
-          href="/contact"
-          className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition"
-        >
-          Get in Touch
-        </Link>
-
-        {/* 💼 Services Section */}
-        <section id="services" className="mt-16 w-full max-w-4xl">
-          <h2 className="text-3xl font-semibold text-center sm:text-left mb-8">
-            Our Services
-          </h2>
-          <div className="grid gap-6 sm:grid-cols-2">
-            <div className="p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-bold mb-2">Custom CMS Solutions</h3>
-              <p className="text-gray-600 text-sm">
-                We build structured, scalable CMS systems using React, Airtable, and Notion — tailored for your workflow.
-              </p>
-            </div>
-            <Link
-              href="/services/business-automation"
-              className="group block p-6 rounded-xl border-2 border-gray-900 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
-            >
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500 mb-2">Featured service</p>
-              <h3 className="text-xl font-bold mb-2">Business Automation</h3>
-              <p className="text-gray-600 text-sm">
-                Save hours every week with practical systems that capture work, connect your tools, and keep follow-up from slipping through.
-              </p>
-              <span className="inline-block mt-5 text-sm font-semibold text-black group-hover:underline underline-offset-4">Explore Business Automation →</span>
+    <main>
+      <section className="bg-navy px-6 pb-16 pt-32 text-white sm:pb-24 sm:pt-40">
+        <div className="mx-auto max-w-5xl">
+          <p className="text-xs font-semibold tracking-[0.2em] text-amber uppercase">
+            BUILT BY A LICENSED CLASS B CONTRACTOR & CONSTRUCTION EXECUTIVE
+          </p>
+          <h1 className="mt-5 max-w-4xl text-4xl font-bold tracking-tight sm:text-6xl">
+            Cut Your Office Paperwork in Half & Get Deposits Paid Faster
+          </h1>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-white/80 sm:text-xl">
+            Custom Bid-to-Cash and Field Operations systems built exclusively for construction, demolition, and specialty trade contractors. Connect estimating, eSignatures, field photos, compliance files, and QuickBooks—without paying thousands a month for bloated software lock-in.
+          </p>
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+            <Link href="/contact" className={btnPrimary}>
+              Book a Free 15-Minute Workflow Call
             </Link>
-            <div className="p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-bold mb-2">System Design & Consulting</h3>
-              <p className="text-gray-600 text-sm">
-                From ideation to implementation, we help you design systems that run smoothly from day one.
-              </p>
-            </div>
-            <div className="p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-bold mb-2">Notion & Airtable Setup</h3>
-              <p className="text-gray-600 text-sm">
-                We turn messy Notion or Airtable setups into powerfully organized systems — with dashboards, filters, and smart views.
-              </p>
-            </div>
+            <Link href="/system" className={btnSecondaryOnDark}>
+              See How the System Works
+            </Link>
           </div>
-        </section>
-      </main>
-    </div>
+          <ul className="mt-12 grid gap-3 border-t border-white/15 pt-8 text-sm text-white/80 sm:grid-cols-3">
+            {trustItems.map((item) => (
+              <li key={item} className="flex gap-3">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber" aria-hidden="true" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="px-6 py-16 sm:py-24">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+            Stop Burning Payroll on Office Busywork
+          </h2>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-muted">
+            If you have two office employees right now, a connected system lets you cut that administrative workload down to one—so your best people focus on winning bids and running jobs instead of shuffling paper.
+          </p>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2">
+            {problems.map((item) => (
+              <article key={item.title} className="rounded-2xl border border-navy/10 bg-white p-6 shadow-sm">
+                <h3 className="text-xl font-bold text-navy">{item.title}</h3>
+                <p className="mt-3 text-muted leading-7">{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-navy/10 bg-white px-6 py-16 sm:py-24">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+            One Connected Command Center From Site Walk to Final Check
+          </h2>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {outcomes.map((item, index) => (
+              <article key={item.title} className="rounded-2xl border border-navy/10 bg-canvas p-6">
+                <p className="text-xs font-semibold tracking-[0.18em] text-amber uppercase">
+                  0{index + 1}
+                </p>
+                <h3 className="mt-3 text-xl font-bold text-navy">{item.title}</h3>
+                <p className="mt-3 text-muted leading-7">{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-ink px-6 py-16 text-white sm:py-24">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            Built by a Licensed Contractor, Not a Generic Tech Agency
+          </h2>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-white/80">
+            Most software consultants have never stepped onto a job site or managed a construction P&L. TekTagma brings executive-level construction management experience and an active California Class B General Contractor’s license. We speak your language—change orders, lien waivers, compliance, job costing, and field reality—and build systems that actually hold up under pressure.
+          </p>
+          <Link href="/about" className="mt-8 inline-block font-semibold text-amber hover:underline underline-offset-4">
+            Read Our Background →
+          </Link>
+        </div>
+      </section>
+
+      <section className="bg-navy px-6 py-16 text-center text-white sm:py-20">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            Ready to Eliminate Office Bottlenecks?
+          </h2>
+          <p className="mt-4 text-lg text-white/80">
+            Schedule a brief 15-minute call or request a video walkthrough of the live Bid-to-Cash system.
+          </p>
+          <Link href="/contact" className={`${btnPrimary} mt-8`}>
+            Get in Touch
+          </Link>
+        </div>
+      </section>
+    </main>
   );
 }

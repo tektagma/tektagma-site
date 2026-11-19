@@ -3,12 +3,13 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Site Structure
 
 The TekTagma marketing site includes the following pages:
-- `/` - Home page with services overview
-- `/products` - Products page featuring CryptoLivePulse (added January 2025)
-- `/about` - About page
-- `/contact` - Contact page
+- `/` - Home
+- `/system` - The Bid-to-Cash & Field Operations System (`/products` redirects here)
+- `/services` - Services & Pricing
+- `/about` - About
+- `/contact` - Contact
 
-Navigation is defined in the home page header component.
+Careers has been removed. Navigation lives in `src/app/components/Navigation.js`.
 
 ## Security Updates
 

@@ -1,61 +1,99 @@
-'use client';
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import BrandLockup from "./BrandLockup";
+import { NAV_LINKS, btnPrimary } from "../lib/site";
 
 export default function Navigation() {
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
+
+  const isActive = (href) => {
+    if (href === "/") return pathname === "/";
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
+
   return (
-    <header className="fixed top-0 left-0 w-full bg-white border-b border-gray-200 shadow-sm z-50">
-      <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo with wrapper */}
-        <Link href="/" className="block relative w-[150px] h-[40px] sm:w-[180px] sm:h-[50px]">
-          <div className="relative w-full h-full">
-            <Image
-              src="/tektagma-logo.webp"
-              alt="TekTagma logo"
-              fill
-              priority
-              style={{ objectFit: "contain" }}
-            />
-          </div>
+    <header className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-navy">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+        <Link href="/" className="min-w-0" aria-label="TekTagma home">
+          <BrandLockup variant="light" />
         </Link>
 
-        {/* Desktop Nav */}
-        <ul className="hidden sm:flex gap-6 text-sm font-medium text-gray-700">
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/products">Products</Link></li>
-          <li><Link href="/#services">Services</Link></li>
-          <li><Link href="/about">About</Link></li>
-          <li><Link href="/careers">Careers</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
+        <ul className="hidden items-center gap-6 text-sm font-medium text-white/80 lg:flex">
+          {NAV_LINKS.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className={`transition hover:text-white ${
+                  isActive(link.href) ? "text-white underline decoration-amber underline-offset-8" : ""
+                }`}
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
 
-        {/* Mobile Hamburger */}
+        <div className="hidden lg:block">
+          <Link href="/contact" className={`${btnPrimary} px-5 py-2.5`}>
+            Book a Workflow Call
+          </Link>
+        </div>
+
         <button
-          className="sm:hidden flex flex-col gap-[3px] p-2"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
+          className="flex flex-col gap-[5px] rounded-md p-2 lg:hidden"
+          onClick={() => setMenuOpen((open) => !open)}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-nav"
         >
-          <span className="w-6 h-[2px] bg-black" />
-          <span className="w-6 h-[2px] bg-black" />
-          <span className="w-6 h-[2px] bg-black" />
+          <span className={`block h-[2px] w-6 bg-white transition ${menuOpen ? "translate-y-[7px] rotate-45" : ""}`} />
+          <span className={`block h-[2px] w-6 bg-white transition ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block h-[2px] w-6 bg-white transition ${menuOpen ? "-translate-y-[7px] -rotate-45" : ""}`} />
         </button>
       </nav>
 
-      {/* Mobile Dropdown */}
-      {menuOpen && (
-        <ul className="sm:hidden flex flex-col items-center gap-4 p-4 bg-white border-t border-gray-200">
-          <li><Link href="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-          <li><Link href="/products" onClick={() => setMenuOpen(false)}>Products</Link></li>
-          <li><Link href="/#services" onClick={() => setMenuOpen(false)}>Services</Link></li>
-          <li><Link href="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
-          <li><Link href="/careers" onClick={() => setMenuOpen(false)}>Careers</Link></li>
-          <li><Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
-        </ul>
-      )}
+      {menuOpen ? (
+        <div
+          id="mobile-nav"
+          className="fixed inset-x-0 top-[68px] bottom-0 z-40 overflow-y-auto border-t border-white/10 bg-navy px-6 py-8 lg:hidden"
+        >
+          <ul className="flex flex-col gap-5 text-lg font-medium text-white">
+            {NAV_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className={isActive(link.href) ? "text-amber" : "hover:text-amber"}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link
+            href="/contact"
+            className={`${btnPrimary} mt-8 w-full`}
+            onClick={() => setMenuOpen(false)}
+          >
+            Book a Workflow Call
+          </Link>
+        </div>
+      ) : null}
     </header>
   );
 }
-

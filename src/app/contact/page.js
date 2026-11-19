@@ -1,16 +1,40 @@
+import ContactForm from "../components/ContactForm";
+import PageHeader from "../components/PageHeader";
+import { SITE } from "../lib/site";
+
+export const metadata = {
+  title: "Contact",
+  description:
+    "Book a free 15-minute workflow call or request a video walkthrough of the live Bid-to-Cash system.",
+};
+
 export default function ContactPage() {
   return (
-    <main className="pt-24 min-h-screen p-10 flex flex-col items-center justify-center text-center">
-      <h1 className="text-4xl font-bold mb-4">Let&apos;s Connect</h1>
-      <p className="text-lg text-gray-600 max-w-xl mb-6">
-        Have a project in mind or need help with systems, CMS, or automation? Let&apos;s talk.
-      </p>
-      <a
-        href="mailto:hello@tektagma.com"
-        className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition"
-      >
-        Email Us
-      </a>
+    <main>
+      <PageHeader
+        eyebrow="Contact"
+        title="Book a Free 15-Minute Workflow Call"
+        subhead="Schedule a brief 15-minute call or request a video walkthrough of the live Bid-to-Cash system."
+      />
+
+      <section className="px-6 py-16 sm:py-24">
+        <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <div>
+            <h2 className="text-2xl font-bold text-navy">What to expect</h2>
+            <p className="mt-4 leading-7 text-muted">
+              Tell us how estimates, field photos, change orders, and QuickBooks currently move through your office. We will either book a 15-minute workflow call or send a video walkthrough of the live system.
+            </p>
+            <p className="mt-4 leading-7 text-muted">{SITE.serviceArea}</p>
+            <p className="mt-6 text-sm text-muted">
+              Prefer email?{" "}
+              <a className="font-medium text-navy underline underline-offset-4" href={`mailto:${SITE.email}`}>
+                {SITE.email}
+              </a>
+            </p>
+          </div>
+          <ContactForm />
+        </div>
+      </section>
     </main>
   );
 }

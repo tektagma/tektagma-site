@@ -14,9 +14,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "TekTagma",
-  description: "Build better business systems with TekTagma.",
+  title: {
+    default: "TekTagma | Construction Operations & Bid-to-Cash Automation",
+    template: "%s | TekTagma",
+  },
+  description:
+    "Custom bid-to-cash and field operations systems for construction, demolition, and specialty trade contractors.",
   metadataBase: new URL("https://tektagma.com"),
+  openGraph: {
+    title: "TekTagma | Construction Operations & Bid-to-Cash Automation",
+    description:
+      "Custom bid-to-cash and field operations systems for construction, demolition, and specialty trade contractors.",
+    images: ["/og.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -31,7 +41,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-canvas font-sans text-body antialiased flex flex-col`}
       >
         <Navigation />
         <div className="flex-1">{children}</div>
