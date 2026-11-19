@@ -40,8 +40,8 @@ const steps = [
 
 const stack = [
   {
-    title: "Built on Proven Standards",
-    body: "Powered by Airtable, Make.com, Google Workspace, BoldSign, and QuickBooks Online—reliable enterprise infrastructure, never fragile experimental code.",
+    title: "Built on Proven Enterprise Tools",
+    body: "Powered by our dedicated cloud automation engine alongside Airtable, Google Workspace, BoldSign, and QuickBooks Online—rock-solid business software, never experimental code.",
   },
   {
     title: "Role-Based Security",

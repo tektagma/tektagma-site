@@ -4,7 +4,7 @@ import { btnPrimary, btnSecondaryOnDark } from "./lib/site";
 const trustItems = [
   "Active CA Class B General Contractor’s License",
   "100% Client Ownership of Data & Files",
-  "Enterprise-Grade Stack (Airtable • Make • QuickBooks)",
+  "Enterprise Automation Engine & QuickBooks Integration",
   "100% U.S.-Based & Background-Vetted",
 ];
 
@@ -38,7 +38,7 @@ const outcomes = [
   },
   {
     title: "Automated QuickBooks Online Billing",
-    body: "Automatically generate deposit invoices (including pass-through permit fees) and final balance invoices (with approved change orders) in QuickBooks without double data entry.",
+    body: "Automatically generate deposit invoices (including permit fees) and final balance invoices (with approved change orders) in QuickBooks without double data entry.",
   },
   {
     title: "Field-to-Office Visibility",

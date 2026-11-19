@@ -26,7 +26,7 @@ export default function AboutPage() {
             We work with construction, demolition, and specialty trade contractors nationwide. When a job needs eyes on the process, we run local on-site audits in the South Bay and San Francisco Bay Area.
           </p>
           <p>
-            This is not a generic tech agency engagement. You keep 100% ownership of your data and files. The stack is enterprise-grade—Airtable, Make, Google Workspace, BoldSign, and QuickBooks Online—connected around how your office and field actually work.
+              This is not a generic tech agency engagement. You keep 100% ownership of your data and files. The stack is enterprise-grade—Airtable, a cloud automation engine, Google Workspace, BoldSign, and QuickBooks Online—connected around how your office and field actually work.
           </p>
           <p>
             Trust matters when connecting your accounting and operations. Unlike overseas agencies that offer cut-rate templates with zero accountability, TekTagma is 100% U.S.-based and security-vetted—holding both an active California Class B General Contractor’s license and prior state security licensing with ADT. Your QuickBooks records, contracts, and proprietary business workflows are handled with the highest level of integrity and zero offshore access.

@@ -28,7 +28,7 @@ const phases = [
     note: "Typically $9,500 one-time | 50% upfront, 50% at Go-Live",
     featured: true,
     items: [
-      "Custom multi-table command center & role-based dashboards (Owner, Estimator, Admin, Field)",
+      "Custom operations hub with separate, easy-to-use views for Owners, Estimators, Office Staff, and Field Foremen",
       "Automated branded PDF proposals, Change Orders, and BoldSign eSignature routing",
       "Standardized Google Drive folder architecture & field photo/receipt sorting",
       "Two-way QuickBooks Online customer, deposit, and final invoice integration",
@@ -43,7 +43,7 @@ const phases = [
     featured: false,
     items: [
       "TekTagma-hosted automation engine with 24/7 error monitoring and automatic retries",
-      "Proactive API maintenance whenever QuickBooks, Google, or eSign platforms update",
+      "Proactive connection maintenance whenever QuickBooks, Google, or eSignature platforms update",
       "Up to 1 hour/month of minor workflow tweaks and field adjustments",
     ],
   },
@@ -52,11 +52,15 @@ const phases = [
 const addons = [
   {
     title: "Multi-Channel Lead Capture",
-    body: "Route website forms, Google Local Services, Yelp/Thumbtack leads, and call tracking straight into your bid pipeline.",
+    body: "Automatically send every new lead from your website, Google Local Services, Yelp, Thumbtack, and phone calls straight into your job pipeline so no bid opportunity slips through the cracks.",
   },
   {
-    title: "Automated Off-Platform Backups",
-    body: "Scheduled nightly exports of your job records and documents to secondary cloud or local storage.",
+    title: "Automatic Nightly Backups",
+    body: "Scheduled nightly copies of all your job records, contracts, photos, and receipts saved to a separate cloud drive or local hard drive for total peace of mind.",
+  },
+  {
+    title: "Custom Future Add-Ons (No Second Audit Fee)",
+    body: "Need something extra as your business grows—like equipment tracking, crew scheduling, or subcontractor compliance? Once you are a client, you never have to pay another $750 audit fee. Just book a quick call, tell us what will make your job easier, and we will send you a clear flat price to build it.",
   },
 ];
 
@@ -110,9 +114,9 @@ export default function ServicesPage() {
       </section>
 
       <section className="border-t border-navy/10 bg-white px-6 py-16 sm:py-24">
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold tracking-tight text-navy">Optional add-ons</h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
+          <div className="mt-8 grid gap-5 lg:grid-cols-3">
             {addons.map((addon) => (
               <article key={addon.title} className="rounded-2xl border border-navy/10 bg-canvas p-6">
                 <h3 className="text-xl font-bold text-navy">{addon.title}</h3>
