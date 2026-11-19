@@ -10,11 +10,11 @@ export const metadata = {
 
 const phases = [
   {
-    tag: "START HERE",
+    tag: "STEP 1 • START HERE",
     title: "Phase 1: Workflow & QuickBooks Audit",
     price: "$750",
     note: "100% credited toward full implementation",
-    featured: false,
+    featured: true,
     items: [
       "90-minute deep-dive diagnostic of your current estimating, filing, field photo, and billing process",
       "QuickBooks Online ledger & workflow readiness check",
@@ -22,11 +22,11 @@ const phases = [
     ],
   },
   {
-    tag: "MOST POPULAR",
+    tag: "STEP 2 • CUSTOM BUILD",
     title: "Phase 2: Full System Implementation",
     price: "$8,500 – $12,500",
     note: "Typically $9,500 one-time | 50% upfront, 50% at Go-Live",
-    featured: true,
+    featured: false,
     items: [
       "Custom operations hub with separate, easy-to-use views for Owners, Estimators, Office Staff, and Field Foremen",
       "Automated branded PDF proposals, Change Orders, and BoldSign eSignature routing",
@@ -36,7 +36,7 @@ const phases = [
     ],
   },
   {
-    tag: "ONGOING PEACE OF MIND",
+    tag: "STEP 3 • ONGOING SUPPORT",
     title: "Phase 3: Managed Automation & Monitoring",
     price: "$650 / month",
     note: "",
@@ -81,7 +81,7 @@ export default function ServicesPage() {
             <article
               key={phase.title}
               className={`flex flex-col rounded-2xl border bg-white p-6 shadow-sm ${
-                phase.featured ? "border-amber ring-2 ring-amber/30" : "border-navy/10"
+                phase.featured ? "border-amber/70 ring-1 ring-amber/20" : "border-navy/10"
               }`}
             >
               <p className="text-xs font-semibold tracking-[0.18em] text-amber uppercase">
