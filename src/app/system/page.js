@@ -10,8 +10,9 @@ export const metadata = {
 
 const steps = [
   {
-    title: "Lead Capture & Job Intake",
-    body: "Website inquiries, phone leads, and bid requests flow straight into a central Jobs & Bids pipeline—zero sticky notes or lost emails.",
+    title: "Centralized Job Intake & Lead Pipeline",
+    body: "Log new bid requests in seconds using a simple, structured intake form—keeping every prospect, job address, and site note organized in one central Jobs & Bids pipeline with zero sticky notes or lost emails.",
+    note: "(Want leads from Yelp, Thumbtack, Google, your website, or phone calls to enter automatically? Ask about our custom Multi-Channel Lead Capture add-on.)",
   },
   {
     title: "One-Click Branded Proposals & eSign",
@@ -75,7 +76,15 @@ export default function SystemPage() {
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold text-navy">{step.title}</h2>
-                  <p className="mt-3 leading-7 text-muted">{step.body}</p>
+                  <p className="mt-3 leading-7 text-muted">
+                    {step.body}
+                    {step.note ? (
+                      <>
+                        {" "}
+                        <em>{step.note}</em>
+                      </>
+                    ) : null}
+                  </p>
                   {step.folders ? (
                     <ul className="mt-4 flex flex-wrap gap-2">
                       {step.folders.map((folder) => (

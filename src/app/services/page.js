@@ -52,7 +52,9 @@ const phases = [
 const addons = [
   {
     title: "Multi-Channel Lead Capture",
-    body: "Automatically send every new lead from your website, Google Local Services, Yelp, Thumbtack, and phone calls straight into your job pipeline so no bid opportunity slips through the cracks.",
+    badge: "CUSTOM QUOTED",
+    sublabel: "Custom Priced Based on Your Lead Sources",
+    body: "Want new leads to create a job record and enter your automation pipeline automatically—without anyone typing them in? We can connect your website contact forms, Google Local Services, Yelp, Thumbtack, Angi, Houzz, Facebook/Instagram ads, inbound phone calls, and more. Because every contractor uses different lead platforms and intake rules, we leave this out of the base system so you never pay for bloated features you don’t need. Once we review how your leads come in, we’ll give you a clear custom quote based on the exact sources you want connected.",
   },
   {
     title: "Automatic Nightly Backups",
@@ -157,7 +159,17 @@ export default function ServicesPage() {
           <div className="mt-8 grid gap-5 lg:grid-cols-3">
             {addons.map((addon) => (
               <article key={addon.title} className="rounded-2xl border border-navy/10 bg-canvas p-6">
-                <h3 className="text-xl font-bold text-navy">{addon.title}</h3>
+                {addon.badge ? (
+                  <p className="text-xs font-semibold tracking-[0.18em] text-amber uppercase">
+                    {addon.badge}
+                  </p>
+                ) : null}
+                <h3 className={`${addon.badge ? "mt-3 " : ""}text-xl font-bold text-navy`}>
+                  {addon.title}
+                </h3>
+                {addon.sublabel ? (
+                  <p className="mt-1 text-sm font-medium text-navy">{addon.sublabel}</p>
+                ) : null}
                 <p className="mt-3 leading-7 text-muted">{addon.body}</p>
               </article>
             ))}
