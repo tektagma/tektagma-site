@@ -27,19 +27,19 @@ export const metadata = {
       "Custom bid-to-cash and field operations systems for construction, demolition, and specialty trade contractors.",
     images: ["/og.png"],
   },
+  icons: {
+    icon: [
+      { url: "/TekTagma-Logo-favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
-        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-canvas font-sans text-body antialiased flex flex-col`}
       >
