@@ -5,6 +5,7 @@ const trustItems = [
   "Active CA Class B General Contractor’s License",
   "100% Client Ownership of Data & Files",
   "Enterprise-Grade Stack (Airtable • Make • QuickBooks)",
+  "100% U.S.-Based & Background-Vetted",
 ];
 
 const problems = [
@@ -67,7 +68,7 @@ export default function Home() {
               See How the System Works
             </Link>
           </div>
-          <ul className="mt-12 grid gap-3 border-t border-white/15 pt-8 text-sm text-white/80 sm:grid-cols-3">
+          <ul className="mt-12 grid gap-3 border-t border-white/15 pt-8 text-sm text-white/80 sm:grid-cols-2 lg:grid-cols-4">
             {trustItems.map((item) => (
               <li key={item} className="flex gap-3">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber" aria-hidden="true" />
@@ -119,10 +120,10 @@ export default function Home() {
       <section className="bg-ink px-6 py-16 text-white sm:py-24">
         <div className="mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Built by a Licensed Contractor, Not a Generic Tech Agency
+            Built by a Licensed Contractor — 100% U.S.-Based & Vetted
           </h2>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-white/80">
-            Most software consultants have never stepped onto a job site or managed a construction P&L. TekTagma brings executive-level construction management experience and an active California Class B General Contractor’s license. We speak your language—change orders, lien waivers, compliance, job costing, and field reality—and build systems that actually hold up under pressure.
+            Most software agencies have never stepped onto a job site—or outsource your sensitive accounting and client files overseas. TekTagma brings executive-level construction management experience, an active California Class B General Contractor’s license, and a state security-cleared background (formerly licensed with ADT). You deal directly with a U.S.-based peer who understands job costing, compliance, and strict confidentiality.
           </p>
           <Link href="/about" className="mt-8 inline-block font-semibold text-amber hover:underline underline-offset-4">
             Read Our Background →

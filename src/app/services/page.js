@@ -95,6 +95,18 @@ export default function ServicesPage() {
             </article>
           ))}
         </div>
+
+        <aside className="mx-auto mt-10 max-w-6xl rounded-2xl border border-amber/40 bg-navy px-6 py-8 text-white sm:px-10 sm:py-10">
+          <p className="text-xs font-semibold tracking-[0.18em] text-amber uppercase">
+            Data Security & U.S. Accountability
+          </p>
+          <h2 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">
+            Zero Offshore Outsourcing. Complete Financial & Data Confidentiality.
+          </h2>
+          <p className="mt-4 max-w-4xl text-base leading-7 text-white/80 sm:text-lg">
+            Handing an outside consultant access to your QuickBooks ledger, proposals, and customer records requires complete trust. TekTagma is 100% U.S.-based and operates under full U.S. legal accountability—never cheap overseas freelancers. Backed by an active CA Class B license and prior state security clearance with ADT, your company’s financial data and job files remain strictly protected.
+          </p>
+        </aside>
       </section>
 
       <section className="border-t border-navy/10 bg-white px-6 py-16 sm:py-24">
