@@ -34,7 +34,7 @@ const problems = [
 const outcomes = [
   {
     title: "Instant Proposals & eSignatures",
-    body: "Turn site-walk notes and photos into branded PDF proposals, dispatch them for legally binding electronic signature, and get notified the second they are signed.",
+    body: "Turn site-walk notes and photos into branded PDF proposals and send them for legally binding electronic signature. The second a client signs, the system automatically sends the QuickBooks deposit invoice.",
   },
   {
     title: "Automatic Job Folders & Compliance",
@@ -46,7 +46,7 @@ const outcomes = [
   },
   {
     title: "Field-to-Office Visibility",
-    body: "Simple mobile upload forms for field foremen and clean, role-based dashboards for owners, estimators, and office admins.",
+    body: "As soon as a deposit is paid, the job moves straight to permitting and scheduling and automatically creates the right task checklist for your workers based on the job type—all visible in clean mobile views.",
   },
 ];
 

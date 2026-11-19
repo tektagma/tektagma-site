@@ -19,7 +19,7 @@ const steps = [
   },
   {
     title: "Automatic Job Folder & QuickBooks Deposit",
-    body: "The moment a client signs, the system builds a standardized Google Drive folder tree and generates the deposit invoice in QuickBooks Online.",
+    body: "The moment a client signs, the system builds a standardized Google Drive folder tree and automatically dispatches the deposit invoice in QuickBooks Online. As soon as that deposit is paid, the job advances to permitting/scheduling and automatically generates trade-specific tasks for your crew based on the job type.",
     folders: [
       "Contracts & Bids",
       "Invoices & Receipts",
