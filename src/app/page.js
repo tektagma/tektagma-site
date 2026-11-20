@@ -119,7 +119,7 @@ export default function Home() {
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             {outcomes.map((item, index) => (
               <article key={item.title} className="rounded-2xl border border-navy/10 bg-canvas p-6">
-                <p className="text-xs font-semibold tracking-[0.18em] text-amber uppercase">
+                <p className="text-xl font-bold text-amber">
                   0{index + 1}
                 </p>
                 <h3 className="mt-3 text-xl font-bold text-navy">{item.title}</h3>
