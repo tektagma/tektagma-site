@@ -133,7 +133,9 @@ export default function Home() {
       <section className="bg-ink px-6 py-16 text-white sm:py-24">
         <div className="mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Built by a Licensed Contractor & Systems Architect — 100% U.S.-Based & Vetted
+            Built by a Licensed Contractor & Systems Architect
+            <br />
+            100% U.S.-Based & Vetted
           </h2>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-white/80">
             Most software developers don't understand job costing or field operations—and most agencies outsource your sensitive accounting and client files overseas. TekTagma bridges that gap by pairing executive-level construction management, accounting expertise, and an active California Class B General Contractor’s license with custom systems architecture. Backed by a state security-cleared background (formerly licensed with ADT), you work directly with a U.S.-based peer who builds automated systems that cut administrative overhead while protecting strict confidentiality.
