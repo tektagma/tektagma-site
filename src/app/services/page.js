@@ -5,64 +5,57 @@ import { btnPrimary } from "../lib/site";
 export const metadata = {
   title: "Services & Pricing",
   description:
-    "Start with a low-risk diagnostic audit, deploy a custom bid-to-cash system, and keep it running with ongoing support.",
+    "Low-risk workflow audits and custom flat-rate automation quotes built around the tools your small business already uses.",
 };
 
-const phases = [
+const tiers = [
   {
     tag: "STEP 1 • START HERE",
-    title: "Phase 1: Workflow & QuickBooks Audit",
-    price: "$750",
-    note: "100% credited toward full implementation",
+    title: "Workflow Audit",
+    price: "$250–$500",
+    note: "100% credited toward your build",
     featured: true,
     items: [
-      "90-minute deep-dive diagnostic of your current estimating, filing, field photo, and billing process",
-      "QuickBooks Online ledger & workflow readiness check",
-      "Custom 1-page Bid-to-Cash automation blueprint with clear ROI breakdown",
+      "In-person (Bay Area) or Zoom diagnostic of how work actually moves through your office",
+      "Plain-English action plan of what to automate first—and what to leave alone",
+      "A clear next-step quote so you are not buying a bloated package you don’t need",
     ],
   },
   {
-    tag: "STEP 2 • CUSTOM BUILD",
-    title: "Phase 2: Full System Implementation",
-    price: "$8,500 – $12,500",
-    note: "Typically $9,500 one-time | 50% upfront, 50% at Go-Live",
+    tag: "TIER 1 • QUICK WIN",
+    title: "Single Fix / Cleanup",
+    price: "Starting at $750–$1,500",
+    note: "One urgent bottleneck, done",
     featured: false,
     items: [
-      "Custom operations hub with separate, easy-to-use views for Owners, Estimators, Office Staff, and Field Foremen",
-      "Automated branded PDF proposals, Change Orders, and BoldSign eSignature routing",
-      "Standardized Google Drive folder architecture & field photo/receipt sorting",
-      "Two-way QuickBooks Online customer, deposit, and final invoice integration",
-      "Hands-on team onboarding & training",
+      "Excel/CSV cleanup into a clean, searchable dashboard",
+      "Instant missed-call text-backs on your existing business number",
+      "Automated Google review requests after a visit or invoice is paid",
     ],
   },
   {
-    tag: "STEP 3 • ONGOING SUPPORT",
-    title: "Phase 3: Managed Automation & Monitoring",
-    price: "$650 / month",
-    note: "",
+    tag: "TIER 2 • FULL WORKFLOW",
+    title: "Multi-System Automation",
+    price: "Starting at $2,500–$5,500+",
+    note: "Custom flat-rate quote after the audit",
     featured: false,
     items: [
-      "TekTagma-hosted automation engine with 24/7 error monitoring and automatic retries",
-      "Proactive connection maintenance whenever QuickBooks, Google, or eSignature platforms update",
-      "Up to 1 hour/month of minor workflow tweaks and field adjustments",
+      "Intake forms that create the client record automatically",
+      "PDF quotes, eSignatures, and matching QuickBooks invoices",
+      "Folders, reminders, and follow-ups wrapped around tools you already use",
     ],
   },
-];
-
-const addons = [
   {
-    title: "Multi-Channel Lead Capture",
-    badge: "CUSTOM QUOTED",
-    sublabel: "Custom Priced Based on Your Lead Sources",
-    body: "Want new leads to create a job record and enter your automation pipeline automatically—without anyone typing them in? We can connect your website contact forms, Google Local Services, Yelp, Thumbtack, Angi, Houzz, Facebook/Instagram ads, inbound phone calls, and more. Because every contractor uses different lead platforms and intake rules, we leave this out of the base system so you never pay for bloated features you don’t need. Once we review how your leads come in, we’ll give you a clear custom quote based on the exact sources you want connected.",
-  },
-  {
-    title: "Automatic Nightly Backups",
-    body: "Scheduled nightly copies of all your job records, contracts, photos, and receipts saved to a separate cloud drive or local hard drive for total peace of mind.",
-  },
-  {
-    title: "Custom Future Add-Ons (No Second Audit Fee)",
-    body: "Need something extra as your business grows—like equipment tracking, crew scheduling, or subcontractor compliance? Once you are a client, you never have to pay another $750 audit fee. Just book a quick call, tell us what will make your job easier, and we will send you a clear flat price to build it.",
+    tag: "OPTIONAL • PEACE OF MIND",
+    title: "Peace of Mind",
+    price: "Starting at $250/month",
+    note: "Ongoing care after go-live",
+    featured: false,
+    items: [
+      "24/7 monitoring, automatic retries, and error alerts",
+      "System updates when QuickBooks, Google, or eSign platforms change",
+      "Minor workflow adjustments so the office does not fall back on retyping",
+    ],
   },
 ];
 
@@ -70,28 +63,44 @@ export default function ServicesPage() {
   return (
     <main>
       <PageHeader
-        eyebrow="Services & Solutions"
-        title="Clear, Practical Implementation"
-        subhead="Start with a low-risk diagnostic audit, deploy a custom system built for your trade, and keep it running smoothly with ongoing support."
+        eyebrow="Services & Pricing"
+        title="Clear, Practical Implementation — Built Around Your Existing Tools"
+        subhead="I start with a low-risk workflow audit, then give you a custom flat-rate quote. No software migration. No disruption to the Google Workspace, QuickBooks, spreadsheets, and phone system you already run."
       />
 
       <section className="px-6 py-16 sm:py-24">
-        <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-3">
-          {phases.map((phase) => (
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs font-semibold tracking-[0.18em] text-amber uppercase">
+            PRICING & ENGAGEMENT
+          </p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+            Four honest ways to start
+          </h2>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-muted">
+            I work with overwhelmed owners across medical and dental, auto shops, property management, law firms, professional services, retail, and the trades. If you run a construction company and need the Bid-to-Cash system, that packaged roadmap lives on the{" "}
+            <Link href="/construction" className="font-semibold text-navy underline underline-offset-4">
+              Construction page
+            </Link>
+            .
+          </p>
+        </div>
+
+        <div className="mx-auto mt-10 grid max-w-6xl gap-6 md:grid-cols-2 xl:grid-cols-4">
+          {tiers.map((tier) => (
             <article
-              key={phase.title}
+              key={tier.title}
               className={`flex flex-col rounded-2xl border bg-white p-6 shadow-sm ${
-                phase.featured ? "border-amber/70 ring-1 ring-amber/20" : "border-navy/10"
+                tier.featured ? "border-amber/70 ring-1 ring-amber/20" : "border-navy/10"
               }`}
             >
               <p className="text-xs font-semibold tracking-[0.18em] text-amber uppercase">
-                {phase.tag}
+                {tier.tag}
               </p>
-              <h2 className="mt-3 text-2xl font-bold text-navy">{phase.title}</h2>
-              <p className="mt-4 text-3xl font-bold text-navy">{phase.price}</p>
-              {phase.note ? <p className="mt-2 text-sm text-muted">{phase.note}</p> : null}
+              <h3 className="mt-3 text-2xl font-bold text-navy">{tier.title}</h3>
+              <p className="mt-4 text-2xl font-bold text-navy xl:text-[1.65rem]">{tier.price}</p>
+              {tier.note ? <p className="mt-2 text-sm text-muted">{tier.note}</p> : null}
               <ul className="mt-6 flex-1 space-y-3 text-sm leading-6 text-muted">
-                {phase.items.map((item) => (
+                {tier.items.map((item) => (
                   <li key={item} className="flex gap-2">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber" aria-hidden="true" />
                     <span>{item}</span>
@@ -107,25 +116,25 @@ export default function ServicesPage() {
             THE BOTTOM-LINE MATH
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-            Why $650/Month Pays for Itself
+            Why Automation Pays for Itself
           </h2>
           <p className="mt-3 text-2xl font-semibold tracking-tight text-navy sm:text-3xl">
-            Less Than Two Days of Office Payroll — Working for You 24/7
+            About a Day of Office Payroll — Working for You 24/7
           </p>
           <p className="mt-5 max-w-4xl text-lg leading-8 text-muted">
-            Full-time office administration often runs $4,500–$6,000+ a month. Plenty of those hours still get lost to redundant data entry and invoicing—typing the same job into estimates, folders, and QuickBooks. At $650 a month, the retainer costs less than two days of that payroll, and it keeps working after the office is locked up.
+            Full-time office administration often runs $4,500–$6,000+ a month. Plenty of those hours still get lost to retyping the same customer into spreadsheets, folders, and QuickBooks. Ongoing care starts at $250 a month—about a day of that payroll, or less—and it keeps working after the office is locked up. The $250–$500 audit is credited toward your build. A $750–$1,500 Quick Win often pays for itself the first time a missed call becomes a customer or a late invoice actually gets collected.
           </p>
           <div className="mt-8 grid gap-5 md:grid-cols-2">
             <article className="rounded-2xl border border-navy/10 bg-white p-6 shadow-sm">
               <h3 className="text-xl font-bold text-navy">Two-Person Office</h3>
               <p className="mt-3 leading-7 text-muted">
-                If you have two people in the office, a connected system lets you streamline that admin load down to one. The thousands you save each month on a second admin salary can go back into the business—instead of redundant data entry.
+                If you have two people in the office, a connected workflow lets you streamline that admin load down to one. The thousands you save each month on a second admin salary can go back into the business—instead of redundant data entry.
               </p>
             </article>
             <article className="rounded-2xl border border-navy/10 bg-white p-6 shadow-sm">
               <h3 className="text-xl font-bold text-navy">One-Person Office / Solo</h3>
               <p className="mt-3 leading-7 text-muted">
-                If you are the office, or you have one admin doing everything, those hours spent re-typing invoices and chasing paper can go back to customer service, bid follow-ups, and sales.
+                If you are the office, or you have one admin doing everything, those hours spent re-typing invoices and chasing paper can go back to customers, follow-ups, and sales.
               </p>
             </article>
           </div>
@@ -133,10 +142,10 @@ export default function ServicesPage() {
             Eliminate the Hidden Cost of Human Mistakes
           </h3>
           <p className="mt-3 max-w-4xl text-lg leading-8 text-muted">
-            When office staff rush through repetitive typing, mistakes happen—a wrong address sends crews to the wrong job site, a forgotten email delays your payment, and late receipts upset clients. Our system eliminates those costly dropped balls so every proposal, folder, and invoice goes out accurate and on time.
+            When the office rushes through repetitive typing, mistakes happen—a wrong address sends someone to the wrong appointment, a forgotten follow-up email delays your payment, and late paperwork upsets a good customer. I build the checks so quotes, folders, and invoices go out accurate and on time, including address verification and customer follow-ups that used to live in someone&apos;s head.
           </p>
           <p className="mt-8 max-w-4xl text-lg leading-8 text-muted">
-            $650 a month buys a reliable 24/7 back-office system: deposits billed on time, change orders not forgotten, and job records you can actually find when you need them.
+            $250 a month buys 24/7 monitoring so those dropped balls stay caught: reminders sent, records findable, and the system still running when you are not at the desk.
           </p>
         </section>
 
@@ -145,37 +154,24 @@ export default function ServicesPage() {
             Data Security & U.S. Accountability
           </p>
           <h2 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">
-            Zero Offshore Outsourcing. Complete Financial & Data Confidentiality.
+            You work with me—not an overseas bench.
           </h2>
           <p className="mt-4 max-w-4xl text-base leading-7 text-white/80 sm:text-lg">
-            Handing an outside consultant access to your QuickBooks ledger, proposals, and customer records requires complete trust. TekTagma is 100% U.S.-based and operates under full U.S. legal accountability—never cheap overseas freelancers. Backed by an active CA Class B license and prior state security clearance with ADT, your company’s financial data and job files remain strictly protected.
+            Handing someone access to your QuickBooks ledger, proposals, and customer records requires complete trust. I am a U.S. citizen based in Sunnyvale, CA, and I travel up to two hours for in-person Bay Area audits. I hold an active California Class B+ contractor&apos;s license and completed state security background checks while designing systems at ADT. Your data stays yours. Work is never outsourced overseas.
           </p>
         </aside>
       </section>
 
-      <section className="border-t border-navy/10 bg-white px-6 py-16 sm:py-24">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold tracking-tight text-navy">Optional add-ons</h2>
-          <div className="mt-8 grid gap-5 lg:grid-cols-3">
-            {addons.map((addon) => (
-              <article key={addon.title} className="rounded-2xl border border-navy/10 bg-canvas p-6">
-                {addon.badge ? (
-                  <p className="text-xs font-semibold tracking-[0.18em] text-amber uppercase">
-                    {addon.badge}
-                  </p>
-                ) : null}
-                <h3 className={`${addon.badge ? "mt-3 " : ""}text-xl font-bold text-navy`}>
-                  {addon.title}
-                </h3>
-                {addon.sublabel ? (
-                  <p className="mt-1 text-sm font-medium text-navy">{addon.sublabel}</p>
-                ) : null}
-                <p className="mt-3 leading-7 text-muted">{addon.body}</p>
-              </article>
-            ))}
-          </div>
-          <Link href="/contact" className={`${btnPrimary} mt-12`}>
-            Book a Workflow Call
+      <section className="border-t border-navy/10 bg-white px-6 py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-navy">
+            Start with a free 15-minute workflow call
+          </h2>
+          <p className="mt-4 text-muted leading-7">
+            Tell me how work currently moves through your office. I will tell you, in plain English, whether an audit, a Quick Win, or a full workflow is the honest next step.
+          </p>
+          <Link href="/contact" className={`${btnPrimary} mt-8`}>
+            Book a Free 15-Minute Workflow Call
           </Link>
         </div>
       </section>
