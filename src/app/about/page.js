@@ -5,7 +5,7 @@ import { SITE, btnPrimary } from "../lib/site";
 export const metadata = {
   title: "About",
   description:
-    "TekTagma is built by a licensed California Class B general contractor and former construction executive—not a generic tech agency.",
+    "TekTagma is built by a former business executive with decades of operations, accounting, and P&L experience—not a generic tech agency.",
 };
 
 export default function AboutPage() {
@@ -13,32 +13,29 @@ export default function AboutPage() {
     <main>
       <PageHeader
         eyebrow="About TekTagma"
-        title="Built by a Licensed Contractor, Not a Generic Tech Agency"
-        subhead="Construction operations and bid-to-cash automation for specialty trades—designed by people who have run jobs, not just software sprints."
+        title="Built by a Business Operator, Not a Tech Agency"
+        subhead="Decades of executive operations, business administration, and accounting—applied to the busywork that slows small businesses down."
       />
 
       <section className="px-6 py-16 sm:py-24">
         <div className="mx-auto max-w-5xl space-y-6 text-lg leading-8 text-muted">
           <p>
-            Most software consultants have never stepped onto a job site or managed a construction P&amp;L. TekTagma is built around executive-level construction management experience and an active California Class B General Contractor’s license. We speak the language of change orders, lien waivers, compliance, job costing, and field reality—and we build systems that actually hold up under pressure.
+            I&apos;ve sat in the owner&apos;s chair. Cash flow, payroll, deadlines, and the staff bottleneck when the office is you. I come from executive leadership, business administration, and accounting—not from a pitch deck. I speak those headaches in plain English and build automations around the tools you already use.
           </p>
           <p>
-            We work with construction, demolition, and specialty trade contractors nationwide. When a job needs eyes on the process, we run local on-site audits in the South Bay and San Francisco Bay Area.
+            That operating discipline is why I also hold an active California Class B+ contractor&apos;s license and completed state security background checks while designing systems at ADT. Those credentials are proof of integrity and accountability—not a reason I only work with contractors.
           </p>
           <p>
-              This is not a generic tech agency engagement. You keep 100% ownership of your data and files. The stack is enterprise-grade—Airtable, a cloud automation engine, Google Workspace, BoldSign, and QuickBooks Online—connected around how your office and field actually work.
-          </p>
-          <p>
-            Trust matters when connecting your accounting and operations. Unlike overseas agencies that offer cut-rate templates with zero accountability, TekTagma is 100% U.S.-based and security-vetted—holding both an active California Class B General Contractor’s license and prior state security licensing with ADT. Your QuickBooks records, contracts, and proprietary business workflows are handled with the highest level of integrity and zero offshore access.
+            TekTagma is 100% U.S.-based. You keep ownership of your data. Work is never outsourced overseas. For Bay Area owners, I travel up to two hours from Sunnyvale for in-person workflow audits; I also work with small businesses nationwide.
           </p>
         </div>
 
         <ul className="mx-auto mt-12 grid max-w-5xl gap-4 sm:grid-cols-2">
           {[
-            "Active CA Class B General Contractor’s License",
-            "Executive Construction Operations & P&L Experience",
-            "100% U.S.-Based & Background-Vetted (Former ADT Security Licensed)",
-            "Remote Nationwide Delivery + Local South Bay On-Site Audits",
+            "Decades of Executive, Accounting & P&L Experience",
+            "Active CA Class B+ General Contractor’s License",
+            "100% U.S.-Based & State Security Background-Vetted (Former ADT)",
+            "In-Person Bay Area Visits (Within 2 Hours of Sunnyvale)",
           ].map((item) => (
             <li
               key={item}
@@ -59,9 +56,11 @@ export default function AboutPage() {
 
       <section className="border-t border-navy/10 bg-white px-6 py-16 sm:py-20">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-navy">See the system, then talk through your workflow</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-navy">
+            Talk through how work actually moves through your office
+          </h2>
           <p className="mt-4 text-muted leading-7">
-            Schedule a brief 15-minute call or request a video walkthrough of the live Bid-to-Cash system.
+            Schedule a brief 15-minute workflow call. No tech jargon—just the bottlenecks, the tools you already have, and what can run without you retyping it.
           </p>
           <Link href="/contact" className={`${btnPrimary} mt-8`}>
             Book a Workflow Call

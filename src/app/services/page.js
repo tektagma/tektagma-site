@@ -70,7 +70,7 @@ export default function ServicesPage() {
   return (
     <main>
       <PageHeader
-        eyebrow="Services & Pricing"
+        eyebrow="Services & Solutions"
         title="Clear, Practical Implementation"
         subhead="Start with a low-risk diagnostic audit, deploy a custom system built for your trade, and keep it running smoothly with ongoing support."
       />

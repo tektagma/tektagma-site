@@ -1,22 +1,35 @@
 export const SITE = {
   name: "TekTagma",
-  tagline: "Construction Operations & Bid-to-Cash Automation",
+  tagline: "Business Operations & Workflow Automation",
   email: "hello@tektagma.com",
   url: "https://tektagma.com",
-  sublabel: "CONSTRUCTION AUTOMATION",
-  footerTagline:
-    "Built by a Licensed Class B General Contractor & Former Construction Executive",
+  sublabel: "BUSINESS OPERATIONS",
+  footerTagline: "TekTagma — Business Operations & Workflow Automation",
   serviceArea:
-    "Serving Contractors Nationwide | Local On-Site Audits in South Bay & SF Bay Area",
+    "Serving Small Businesses Nationwide | In-Person Workflow Audits Across the SF Bay Area (Within 2 Hours of Sunnyvale, CA)",
   copyright: "© 2026 TekTagma. All rights reserved.",
 };
 
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
-  { href: "/system", label: "The System" },
-  { href: "/services", label: "Services & Pricing" },
+  { href: "/services", label: "Services & Solutions" },
   { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "/contact", label: "Contact / Book a Call" },
+];
+
+export const PRODUCT_LINKS = [
+  {
+    href: "/construction",
+    label: "Construction Bid-to-Cash System",
+    description: "End-to-end operations & billing automation for contractors",
+    external: false,
+  },
+  {
+    href: "https://cryptolivepulse.com",
+    label: "CryptoLivePulse",
+    description: "Real-time crypto market intelligence & AI voice alerts",
+    external: true,
+  },
 ];
 
 export const btnPrimary =
@@ -24,3 +37,6 @@ export const btnPrimary =
 
 export const btnSecondaryOnDark =
   "inline-flex items-center justify-center rounded-md border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70";
+
+export const btnSecondaryOnLight =
+  "inline-flex items-center justify-center rounded-md border border-navy/20 px-6 py-3 text-sm font-semibold text-navy transition hover:bg-navy/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-navy/40";

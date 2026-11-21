@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PageHeader from "../components/PageHeader";
-import { btnPrimary } from "../lib/site";
+import { btnPrimary, btnSecondaryOnLight } from "../lib/site";
 
 export const metadata = {
   title: "The System",
@@ -58,7 +58,7 @@ export default function SystemPage() {
   return (
     <main>
       <PageHeader
-        eyebrow="The System"
+        eyebrow="Construction Bid-to-Cash"
         title="The Bid-to-Cash & Field Operations System"
         subhead="A modular, custom-tailored workflow engineered around how specialty contractors actually bid, build, document, and bill."
       />
@@ -117,9 +117,14 @@ export default function SystemPage() {
               </article>
             ))}
           </div>
-          <Link href="/contact" className={`${btnPrimary} mt-12`}>
-            Book a Free 15-Minute Workflow Call
-          </Link>
+          <div className="mt-12 flex flex-col gap-3 sm:flex-row">
+            <Link href="/contact" className={btnPrimary}>
+              Book a Free 15-Minute Workflow Call
+            </Link>
+            <Link href="/construction" className={btnSecondaryOnLight}>
+              Construction Bid-to-Cash Overview
+            </Link>
+          </div>
         </div>
       </section>
     </main>

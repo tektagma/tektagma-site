@@ -15,16 +15,16 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "TekTagma | Construction Operations & Bid-to-Cash Automation",
+    default: "TekTagma | Business Operations & Workflow Automation",
     template: "%s | TekTagma",
   },
   description:
-    "Custom bid-to-cash and field operations systems for construction, demolition, and specialty trade contractors.",
+    "I help small businesses connect the tools they already use—Google Workspace, QuickBooks, spreadsheets, and phones—to stop double data entry, capture missed leads, and get paid faster.",
   metadataBase: new URL("https://tektagma.com"),
   openGraph: {
-    title: "TekTagma | Construction Operations & Bid-to-Cash Automation",
+    title: "TekTagma | Business Operations & Workflow Automation",
     description:
-      "Custom bid-to-cash and field operations systems for construction, demolition, and specialty trade contractors.",
+      "I help small businesses connect the tools they already use—Google Workspace, QuickBooks, spreadsheets, and phones—to stop double data entry, capture missed leads, and get paid faster.",
     images: ["/og.png"],
   },
   icons: {

@@ -1,52 +1,37 @@
 import Link from "next/link";
-import { btnPrimary, btnSecondaryOnDark } from "./lib/site";
+import { btnPrimary, btnSecondaryOnDark, btnSecondaryOnLight } from "./lib/site";
 
 const trustItems = [
-  "Active CA Class B General Contractor’s License",
-  "100% Client Ownership of Data & Files",
-  "Enterprise Automation Engine & QuickBooks Integration",
-  "100% U.S.-Based & Background-Vetted",
+  "Decades of Executive & Accounting Experience",
+  "Works With Your Existing Software & Phone",
+  "100% U.S.-Based & Security Background-Vetted",
+  "In-Person Bay Area Visits (Within 2 Hrs of Sunnyvale)",
 ];
 
-const problems = [
+const solutions = [
   {
-    title: "Delayed Deposits & Slow Billing",
-    body: "Waiting days to type up estimates and manually re-enter invoices into QuickBooks slows down your cash flow.",
+    title: "Quote-to-Invoice & QuickBooks Sync",
+    body: "Stop retyping the same job from estimate to invoice. I connect the quotes, spreadsheets, and QuickBooks files you already use so approved work becomes a bill without double data entry.",
   },
   {
-    title: "Unbilled Change Orders",
-    body: "Verbal approvals in the field get forgotten before final billing, eating straight into your job profit.",
+    title: "Instant Missed-Call Text-Backs",
+    body: "When a call goes unanswered, a polite text goes out in seconds so the lead doesn’t call the next shop. It uses the phone number you already have—no new phone system required.",
   },
   {
-    title: "Scattered Photos & Compliance Risks",
-    body: "Crew photos, permits, and dump receipts buried in text threads leave you exposed when inspectors or clients ask for proof months later.",
+    title: "Automatic Client Folders & File Organization",
+    body: "New clients and jobs get a clean, standardized folder tree automatically. Contracts, photos, invoices, and emails land in the right place instead of a shared-drive scavenger hunt.",
   },
   {
-    title: "Bloated Software Lock-In",
-    body: "Paying $1,000+/month for rigid construction platforms your field crew refuses to use.",
+    title: "Automated Payment & Appointment Reminders",
+    body: "Polite, scheduled reminders go out before appointments and after invoices so you spend less time chasing no-shows and late payments.",
   },
   {
-    title: "Costly Typos & Dropped Balls",
-    body: "One mistyped address sends a crew to the wrong site, and one forgotten invoice email delays your payout or frustrates a good customer. Manual data entry isn't just slow—human mistakes quietly drain your profit.",
-  },
-];
-
-const outcomes = [
-  {
-    title: "Instant Proposals & eSignatures",
-    body: "Turn site-walk notes and photos into branded PDF proposals and send them for legally binding electronic signature. The second a client signs, the system automatically sends the QuickBooks deposit invoice.",
+    title: "Automated Google Review Requests",
+    body: "After a job or visit wraps, a review request goes out automatically so happy customers actually leave the Google review instead of forgetting.",
   },
   {
-    title: "Automatic Job Folders & Compliance",
-    body: "Every signed contract, change order, before/after crew photo, permit, and dump receipt is automatically sorted into standardized client folders and backed up.",
-  },
-  {
-    title: "Automated QuickBooks Online Billing",
-    body: "Automatically generate deposit invoices (including permit fees) and final balance invoices (with approved change orders) in QuickBooks without double data entry.",
-  },
-  {
-    title: "Field-to-Office Visibility",
-    body: "As soon as a deposit is paid, the job moves straight to permitting and scheduling and automatically creates the right task checklist for your workers based on the job type—all visible in clean mobile views.",
+    title: "Messy Spreadsheet & Database Cleanup",
+    body: "I clean, connect, and stabilize the Google Sheets, Excel files, and databases you already run on—so the office stops fighting broken formulas and duplicate records.",
   },
 ];
 
@@ -56,20 +41,20 @@ export default function Home() {
       <section className="bg-navy px-6 pb-16 pt-32 text-white sm:pb-24 sm:pt-40">
         <div className="mx-auto max-w-5xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-amber uppercase">
-            BUILT BY A LICENSED CLASS B CONTRACTOR & CONSTRUCTION EXECUTIVE
+            BUILT BY A FORMER BUSINESS EXECUTIVE — NOT A TECH AGENCY
           </p>
           <h1 className="mt-5 max-w-4xl text-4xl font-bold tracking-tight sm:text-6xl">
-            Cut Your Office Paperwork in Half & Get Deposits Paid Faster
+            Eliminate Office Busywork & Automate Your Daily Operations—Without Changing Your Software.
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-white/80 sm:text-xl">
-            Custom Bid-to-Cash and Field Operations systems built exclusively for construction, demolition, and specialty trade contractors. Connect estimating, eSignatures, field photos, compliance files, and QuickBooks—without paying thousands a month for bloated software lock-in.
+            I help small businesses connect the tools they already use—Google Workspace, QuickBooks, spreadsheets, and phones—to stop double data entry, capture missed leads, and get paid faster. I speak business, not tech jargon.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <Link href="/contact" className={btnPrimary}>
               Book a Free 15-Minute Workflow Call
             </Link>
-            <Link href="/system" className={btnSecondaryOnDark}>
-              See How the System Works
+            <Link href="#solutions" className={btnSecondaryOnDark}>
+              Explore Automation Solutions
             </Link>
           </div>
           <ul className="mt-12 grid gap-3 border-t border-white/15 pt-8 text-sm text-white/80 sm:grid-cols-2 lg:grid-cols-4">
@@ -83,28 +68,42 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 py-16 sm:py-24">
+      <section className="bg-ink px-6 py-16 text-white sm:py-24">
+        <div className="mx-auto max-w-5xl">
+          <p className="text-xs font-semibold tracking-[0.2em] text-amber uppercase">
+            HIGH-TRUST OPERATIONS
+          </p>
+          <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+            I&apos;ve Been in Your Shoes
+          </h2>
+          <div className="mt-6 max-w-3xl space-y-5 text-lg leading-8 text-white/80">
+            <p>
+              Most tech freelancers and overseas agencies have never sat in the owner&apos;s chair. They don&apos;t feel cash flow, payroll Friday, or the staff bottleneck that happens when the office is you.
+            </p>
+            <p>
+              I&apos;ve spent decades in executive leadership, accounting, payroll, and P&amp;L—running the numbers, making payroll, and watching how small delays in billing or follow-up hit the bottom line. I also hold an active California Class B+ contractor&apos;s license, so I know what personal accountability looks like when a business is on the line.
+            </p>
+            <p>
+              You don&apos;t get a junior developer reading a script. You get a U.S.-based peer who has lived the same operational pressure—and builds systems that cut the busywork without talking down to you.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="solutions" className="scroll-mt-24 px-6 py-16 sm:py-24">
         <div className="mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-            Stop Burning Payroll on Office Busywork
+            I Work With What You Already Have
           </h2>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-muted">
-            If you have two office employees, a connected system lets you cut that administrative workload down to one. If you run a one-person office—or you are the office—it takes the repetitive paperwork off your plate. Either way, those hours shift from re-typing invoices and shuffling files to customers, bid follow-ups, and winning work.
+            You don&apos;t need a new platform, a new login, or a six-month software migration. Automations wrap the Google Sheets, Gmail, QuickBooks, Excel, and phone system you already run—so the office stops typing the same thing twice. Built for overwhelmed owners in medical and dental, auto shops, property management, law firms, professional services, retail, and the trades.
           </p>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-6">
-            {problems.map((item, index) => (
-              <article
-                key={item.title}
-                className={`rounded-2xl border border-navy/10 bg-white p-6 shadow-sm ${
-                  index < 3
-                    ? "lg:col-span-2"
-                    : index === 4
-                      ? "sm:col-span-2 lg:col-span-3"
-                      : "lg:col-span-3"
-                }`}
-              >
-                <h3 className="text-xl font-bold text-navy">{item.title}</h3>
-                <p className="mt-3 text-muted leading-7">{item.body}</p>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {solutions.map((item, index) => (
+              <article key={item.title} className="rounded-2xl border border-navy/10 bg-white p-6 shadow-sm">
+                <p className="text-xl font-bold text-amber">0{index + 1}</p>
+                <h3 className="mt-3 text-xl font-bold text-navy">{item.title}</h3>
+                <p className="mt-3 leading-7 text-muted">{item.body}</p>
               </article>
             ))}
           </div>
@@ -114,18 +113,41 @@ export default function Home() {
       <section className="border-y border-navy/10 bg-white px-6 py-16 sm:py-24">
         <div className="mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-            One Connected Command Center From Site Walk to Final Check
+            Two Products. Same Operator.
           </h2>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-muted">
+            Most owners start with a workflow audit around the tools they already have. If you run a trade company—or you want live crypto market intelligence—those packaged products are ready to explore.
+          </p>
           <div className="mt-10 grid gap-6 md:grid-cols-2">
-            {outcomes.map((item, index) => (
-              <article key={item.title} className="rounded-2xl border border-navy/10 bg-canvas p-6">
-                <p className="text-xl font-bold text-amber">
-                  0{index + 1}
-                </p>
-                <h3 className="mt-3 text-xl font-bold text-navy">{item.title}</h3>
-                <p className="mt-3 text-muted leading-7">{item.body}</p>
-              </article>
-            ))}
+            <article className="flex flex-col rounded-2xl border border-navy/10 bg-canvas p-8">
+              <p className="text-xs font-semibold tracking-[0.18em] text-amber uppercase">
+                FOR CONTRACTORS
+              </p>
+              <h3 className="mt-3 text-2xl font-bold text-navy">Construction Bid-to-Cash OS</h3>
+              <p className="mt-4 flex-1 leading-7 text-muted">
+                End-to-end operations and billing automation for contractors: proposals, eSignatures, job folders, QuickBooks deposits, field capture, and final billing—without bloated construction software lock-in.
+              </p>
+              <Link href="/construction" className={`${btnSecondaryOnLight} mt-8`}>
+                Explore Construction System →
+              </Link>
+            </article>
+            <article className="flex flex-col rounded-2xl border border-navy/10 bg-navy p-8 text-white">
+              <p className="text-xs font-semibold tracking-[0.18em] text-amber uppercase">
+                MARKET INTELLIGENCE
+              </p>
+              <h3 className="mt-3 text-2xl font-bold">CryptoLivePulse.com</h3>
+              <p className="mt-4 flex-1 leading-7 text-white/80">
+                Real-time crypto market intelligence and AI voice alerts—a TekTagma product for people who need the pulse without staring at a screen all day.
+              </p>
+              <a
+                href="https://cryptolivepulse.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${btnPrimary} mt-8`}
+              >
+                Visit CryptoLivePulse →
+              </a>
+            </article>
           </div>
         </div>
       </section>
@@ -133,29 +155,40 @@ export default function Home() {
       <section className="bg-ink px-6 py-16 text-white sm:py-24">
         <div className="mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Built by a Licensed Contractor & Systems Architect
-            <br />
-            100% U.S.-Based & Vetted
+            Security, Privacy &amp; Local Commitment
           </h2>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-white/80">
-            Most software developers don't understand job costing or field operations—and most agencies outsource your sensitive accounting and client files overseas. TekTagma bridges that gap by pairing executive-level construction management, accounting expertise, and an active California Class B General Contractor’s license with custom systems architecture. Backed by a state security-cleared background (formerly licensed with ADT), you work directly with a U.S.-based peer who builds automated systems that cut administrative overhead while protecting strict confidentiality.
+            I am a U.S. citizen based in Sunnyvale, CA. For Bay Area clients, I travel up to two hours for in-person workflow audits. I previously designed systems at ADT and completed state security background checks. You retain 100% ownership of your data and files. Engagements are covered by a confidentiality agreement. Work is never outsourced overseas.
           </p>
-          <Link href="/about" className="mt-8 inline-block font-semibold text-amber hover:underline underline-offset-4">
-            Read Our Background →
-          </Link>
+          <ul className="mt-10 grid gap-4 sm:grid-cols-2">
+            {[
+              "U.S. citizen — Sunnyvale, CA",
+              "In-person visits within 2 hours of Sunnyvale",
+              "Former ADT systems designer, state security background checks",
+              "100% client data ownership · confidentiality agreement · never outsourced overseas",
+            ].map((item) => (
+              <li
+                key={item}
+                className="rounded-2xl border border-white/10 bg-white/5 p-5 text-sm leading-6 text-white/85"
+              >
+                <span className="mb-3 block h-1.5 w-8 rounded-full bg-amber" aria-hidden="true" />
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
       <section className="bg-navy px-6 py-16 text-center text-white sm:py-20">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Ready to Eliminate Office Bottlenecks?
+            Ready to Stop Doing the Same Work Twice?
           </h2>
           <p className="mt-4 text-lg text-white/80">
-            Schedule a brief 15-minute call or request a video walkthrough of the live Bid-to-Cash system.
+            Book a brief 15-minute call. We&apos;ll look at how work actually moves through your office—and what can run without you retyping it.
           </p>
           <Link href="/contact" className={`${btnPrimary} mt-8`}>
-            Get in Touch
+            Book a Free 15-Minute Workflow Call
           </Link>
         </div>
       </section>

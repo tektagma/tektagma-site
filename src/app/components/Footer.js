@@ -1,12 +1,12 @@
 import Link from "next/link";
 import BrandLockup from "./BrandLockup";
-import { NAV_LINKS, SITE } from "../lib/site";
+import { NAV_LINKS, PRODUCT_LINKS, SITE } from "../lib/site";
 
 export default function Footer() {
   return (
     <footer className="mt-auto bg-navy text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="space-y-4">
+      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="space-y-4 lg:col-span-1">
           <BrandLockup variant="light" />
           <p className="max-w-sm text-sm leading-6 text-white/75">{SITE.footerTagline}</p>
         </div>
@@ -21,6 +21,32 @@ export default function Footer() {
                 <Link href={link.href} className="hover:text-white hover:underline underline-offset-4">
                   {link.label}
                 </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <nav aria-label="Products">
+          <p className="mb-4 text-xs font-semibold tracking-[0.18em] text-amber uppercase">
+            Products
+          </p>
+          <ul className="space-y-3 text-sm text-white/80">
+            {PRODUCT_LINKS.map((item) => (
+              <li key={item.href}>
+                {item.external ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white hover:underline underline-offset-4"
+                  >
+                    {item.label === "CryptoLivePulse" ? "CryptoLivePulse.com" : item.label}
+                  </a>
+                ) : (
+                  <Link href={item.href} className="hover:text-white hover:underline underline-offset-4">
+                    {item.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
