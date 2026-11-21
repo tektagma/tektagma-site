@@ -11,27 +11,27 @@ const trustItems = [
 const solutions = [
   {
     title: "Quote-to-Invoice & QuickBooks Sync",
-    body: "Stop retyping the same job from estimate to invoice. I connect the quotes, spreadsheets, and QuickBooks files you already use so approved work becomes a bill without double data entry.",
+    body: "Enter job or order details once to auto-generate PDF quotes, capture e-signatures, and create matching QuickBooks invoices without double data entry.",
   },
   {
     title: "Instant Missed-Call Text-Backs",
-    body: "When a call goes unanswered, a polite text goes out in seconds so the lead doesn’t call the next shop. It uses the phone number you already have—no new phone system required.",
+    body: "Never lose a lead when busy. Automatically text missed callers back within seconds and log their details while keeping your existing business phone number.",
   },
   {
     title: "Automatic Client Folders & File Organization",
-    body: "New clients and jobs get a clean, standardized folder tree automatically. Contracts, photos, invoices, and emails land in the right place instead of a shared-drive scavenger hunt.",
+    body: "Auto-create standardized Google Drive folders for every new client and route signed contracts, receipts, and photos into the right place.",
   },
   {
     title: "Automated Payment & Appointment Reminders",
-    body: "Polite, scheduled reminders go out before appointments and after invoices so you spend less time chasing no-shows and late payments.",
+    body: "Cut no-shows and awkward late-invoice chasing with polite, automated text and email follow-ups.",
   },
   {
     title: "Automated Google Review Requests",
-    body: "After a job or visit wraps, a review request goes out automatically so happy customers actually leave the Google review instead of forgetting.",
+    body: "Automatically text satisfied customers a direct review link the moment an invoice is paid or a service is completed.",
   },
   {
     title: "Messy Spreadsheet & Database Cleanup",
-    body: "I clean, connect, and stabilize the Google Sheets, Excel files, and databases you already run on—so the office stops fighting broken formulas and duplicate records.",
+    body: "Consolidate scattered, broken Excel/CSV files into one clean, searchable dashboard so you can clearly see your numbers.",
   },
 ];
 
@@ -78,13 +78,13 @@ export default function Home() {
           </h2>
           <div className="mt-6 max-w-3xl space-y-5 text-lg leading-8 text-white/80">
             <p>
-              Most tech freelancers and overseas agencies have never sat in the owner&apos;s chair. They don&apos;t feel cash flow, payroll Friday, or the staff bottleneck that happens when the office is you.
+              Most tech freelancers and overseas agencies have never sat in the owner&apos;s chair. They don&apos;t feel cash flow, deadlines, or the staff bottleneck that happens when the office is you—not from a developer&apos;s cubicle.
             </p>
             <p>
-              I&apos;ve spent decades in executive leadership, accounting, payroll, and P&amp;L—running the numbers, making payroll, and watching how small delays in billing or follow-up hit the bottom line. I also hold an active California Class B+ contractor&apos;s license, so I know what personal accountability looks like when a business is on the line.
+              I&apos;ve spent decades in executive leadership, accounting, payroll, and P&amp;L. I&apos;ve run the numbers, made payroll, and watched how small delays in billing or follow-up hit the bottom line. An active California Class B+ contractor&apos;s license is extra proof of that accountability—not a sign this work is only for one trade.
             </p>
             <p>
-              You don&apos;t get a junior developer reading a script. You get a U.S.-based peer who has lived the same operational pressure—and builds systems that cut the busywork without talking down to you.
+              You don&apos;t get a junior developer reading a script. You get a U.S.-based peer who has lived those pressures from the owner&apos;s chair, and who builds systems that cut the busywork without talking down to you.
             </p>
           </div>
         </div>
