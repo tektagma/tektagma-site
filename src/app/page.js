@@ -8,6 +8,25 @@ const trustItems = [
   "In-Person Bay Area Visits (Within 2 Hrs of Sunnyvale)",
 ];
 
+const diyReasons = [
+  {
+    title: "Diagnose the Real Bottleneck First",
+    body: "I start by watching how work actually moves through your office. That way we fix the delay that costs you money—not a symptom you happened to notice in a software catalog.",
+  },
+  {
+    title: "Built-In Safety Checks",
+    body: "DIY connections fail quietly. I build simple checks so a missed invoice, a duplicate customer, or a forgotten follow-up gets caught before it hits your reputation.",
+  },
+  {
+    title: "Safe, Properly Secured Connections",
+    body: "Your QuickBooks, Google, and customer files stay yours. I connect the tools you already use the right way, under a confidentiality agreement, with no overseas access.",
+  },
+  {
+    title: "Ongoing Testing & Maintenance",
+    body: "Software vendors change things without warning. I monitor and test the workflow so you find out from me—not from a customer who never got their invoice.",
+  },
+];
+
 const solutions = [
   {
     title: "Quote-to-Invoice & QuickBooks Sync",
@@ -87,6 +106,20 @@ export default function Home() {
               You don&apos;t get a junior developer reading a script. You get a U.S.-based peer who has lived those pressures from the owner&apos;s chair, and who builds systems that cut the busywork without talking down to you.
             </p>
           </div>
+
+          <aside className="mt-10 rounded-2xl border border-amber/40 bg-navy p-6 sm:p-8">
+            <h3 className="text-xl font-bold tracking-tight sm:text-2xl">
+              Why Business Owners Hire a Specialist Instead of DIY Tools
+            </h3>
+            <ul className="mt-6 grid gap-5 sm:grid-cols-2">
+              {diyReasons.map((item) => (
+                <li key={item.title} className="rounded-xl border border-white/10 bg-white/5 p-5">
+                  <p className="font-bold text-amber">{item.title}</p>
+                  <p className="mt-2 text-sm leading-6 text-white/80">{item.body}</p>
+                </li>
+              ))}
+            </ul>
+          </aside>
         </div>
       </section>
 
