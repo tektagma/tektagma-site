@@ -10,20 +10,20 @@ const trustItems = [
 
 const diyReasons = [
   {
-    title: "Diagnose the Real Bottleneck First",
-    body: "I start by watching how work actually moves through your office. That way we fix the delay that costs you money—not a symptom you happened to notice in a software catalog.",
+    title: "I Diagnose the Real Bottleneck First",
+    body: "You don't have to figure out how everything should connect—I look at how your office runs and map out clean, logical steps before building anything.",
   },
   {
-    title: "Built-In Safety Checks",
-    body: "DIY connections fail quietly. I build simple checks so a missed invoice, a duplicate customer, or a forgotten follow-up gets caught before it hits your reputation.",
+    title: "Built-In Safety Checks (Zero Silent Failures)",
+    body: "Basic DIY templates break quietly when someone leaves a field blank or enters a typo. I build automatic double-checks and instant alerts so an invoice or lead never disappears without you knowing.",
   },
   {
     title: "Safe, Properly Secured Connections",
-    body: "Your QuickBooks, Google, and customer files stay yours. I connect the tools you already use the right way, under a confidentiality agreement, with no overseas access.",
+    body: "Connecting QuickBooks, emails, and customer records carries real risk if done wrong. I configure permissions properly so your financial data stays locked down and under your control.",
   },
   {
     title: "Ongoing Testing & Maintenance",
-    body: "Software vendors change things without warning. I monitor and test the workflow so you find out from me—not from a customer who never got their invoice.",
+    body: "When QuickBooks, Google, or phone carriers update their systems, you don't waste your evenings troubleshooting broken links—I stay accountable and keep your workflows running smoothly.",
   },
 ];
 
