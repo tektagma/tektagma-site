@@ -8,6 +8,25 @@ export const metadata = {
     "Low-risk workflow audits and custom flat-rate automation quotes built around the tools your small business already uses.",
 };
 
+const startingPoints = [
+  {
+    title: "You Know Exactly What You Want Built",
+    body: "You already have a specific task in mind—like sending website leads straight into QuickBooks or automating missed-call texts. Tell me the exact outcome you want, and I will build, test, and connect it around your existing tools.",
+  },
+  {
+    title: "You Have a Problem, But No Process Yet",
+    body: "You know your paperwork, follow-ups, or billing are chaotic, but you don't know how to structure a clean workflow. Drawing on decades of executive operations and accounting experience, I design the step-by-step process from scratch and automate it for you.",
+  },
+  {
+    title: "You Aren't Sure Where You're Losing Time or Money",
+    body: "Your office gets the job done, so you aren't sure if there is a bottleneck worth fixing. I take a fresh executive look at how information moves through your business—spotting hidden payroll waste, slow invoicing, or dropped leads you didn't realize were costing you money.",
+  },
+  {
+    title: "You Tried Setting Something Up, and It's Half-Broken",
+    body: "Someone started building spreadsheets or automations for you, and now things are messy or failing silently. I audit what is already in place, clean up the errors, and make your system reliable.",
+  },
+];
+
 const tiers = [
   {
     tag: "STEP 1 • START HERE",
@@ -71,11 +90,35 @@ export default function ServicesPage() {
       <section className="px-6 py-16 sm:py-24">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-semibold tracking-[0.18em] text-amber uppercase">
+            HOW WE START
+          </p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+            I Meet You Where You Are
+          </h2>
+          <p className="mt-3 text-2xl font-semibold tracking-tight text-navy sm:text-3xl">
+            No Matter Your Starting Point, We Have a Clear Path Forward
+          </p>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {startingPoints.map((item, index) => (
+              <article key={item.title} className="rounded-2xl border border-navy/10 bg-white p-6 shadow-sm">
+                <p className="text-xl font-bold text-amber">0{index + 1} •</p>
+                <h3 className="mt-2 text-xl font-bold text-navy">{item.title}</h3>
+                <p className="mt-3 leading-7 text-muted">{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div className="mx-auto mt-16 max-w-6xl">
+          <p className="text-xs font-semibold tracking-[0.18em] text-amber uppercase">
             PRICING & ENGAGEMENT
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
             Four honest ways to start
           </h2>
+          <p className="mt-4 max-w-4xl text-lg leading-8 text-muted">
+            Simple single fixes start with a free 15-minute call and a flat quote—no paid audit needed. Complex multi-system workflows begin with a $250–$500 Workflow Audit, which is 100% credited toward your build.
+          </p>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-muted">
             I work with overwhelmed owners across medical and dental, auto shops, property management, law firms, professional services, retail, and the trades. If you run a construction company and need the Bid-to-Cash system, that packaged roadmap lives on the{" "}
             <Link href="/construction" className="font-semibold text-navy underline underline-offset-4">
