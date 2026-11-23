@@ -26,7 +26,7 @@ export default function AboutPage() {
             That operating discipline is why I also hold an active California Class B+ contractor&apos;s license and completed state security background checks while designing systems at ADT. Those credentials are proof of integrity and accountability—not a reason I only work with contractors.
           </p>
           <p>
-            TekTagma is 100% U.S.-based. You keep ownership of your data. Work is never outsourced overseas. For Bay Area owners, I travel up to two hours from Sunnyvale for in-person workflow audits; I also work with small businesses nationwide.
+            TekTagma is 100% U.S.-based. You keep ownership of your data. Work is never outsourced overseas. For Bay Area owners, I travel up to one hour from Sunnyvale for in-person workflow audits; I also work with small businesses nationwide.
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export default function AboutPage() {
             "Decades of Executive, Accounting & P&L Experience",
             "Active CA Class B+ General Contractor’s License",
             "100% U.S.-Based & State Security Background-Vetted (Former ADT)",
-            "In-Person Bay Area Visits (Within 2 Hours of Sunnyvale)",
+            "In-Person Bay Area Visits (Within 1 Hour of Sunnyvale)",
           ].map((item) => (
             <li
               key={item}

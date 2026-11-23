@@ -5,7 +5,7 @@ const trustItems = [
   "Decades of Executive & Accounting Experience",
   "Works With Your Existing Software & Phone",
   "100% U.S.-Based & Security Background-Vetted",
-  "In-Person Bay Area Visits (Within 2 Hrs of Sunnyvale)",
+  "In-Person Bay Area Visits (Within 1 Hr of Sunnyvale)",
 ];
 
 const diyReasons = [
@@ -191,12 +191,12 @@ export default function Home() {
             Security, Privacy &amp; Local Commitment
           </h2>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-white/80">
-            I am a U.S. citizen based in Sunnyvale, CA. For Bay Area clients, I travel up to two hours for in-person workflow audits. I previously designed systems at ADT and completed state security background checks. You retain 100% ownership of your data and files. Engagements are covered by a confidentiality agreement. Work is never outsourced overseas.
+            I am a U.S. citizen based in Sunnyvale, CA. For Bay Area clients, I travel up to one hour for in-person workflow audits. I previously designed systems at ADT and completed state security background checks. You retain 100% ownership of your data and files. Engagements are covered by a confidentiality agreement. Work is never outsourced overseas.
           </p>
           <ul className="mt-10 grid gap-4 sm:grid-cols-2">
             {[
               "U.S. citizen — Sunnyvale, CA",
-              "In-person visits within 2 hours of Sunnyvale",
+              "In-person visits within 1 hour of Sunnyvale",
               "Former ADT systems designer, state security background checks",
               "100% client data ownership · confidentiality agreement · never outsourced overseas",
             ].map((item) => (

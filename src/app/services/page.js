@@ -200,7 +200,7 @@ export default function ServicesPage() {
             You work with me—not an overseas bench.
           </h2>
           <p className="mt-4 max-w-4xl text-base leading-7 text-white/80 sm:text-lg">
-            Handing someone access to your QuickBooks ledger, proposals, and customer records requires complete trust. I am a U.S. citizen based in Sunnyvale, CA, and I travel up to two hours for in-person Bay Area audits. I hold an active California Class B+ contractor&apos;s license and completed state security background checks while designing systems at ADT. Your data stays yours. Work is never outsourced overseas.
+            Handing someone access to your QuickBooks ledger, proposals, and customer records requires complete trust. I am a U.S. citizen based in Sunnyvale, CA, and I travel up to one hour for in-person Bay Area audits. I hold an active California Class B+ contractor&apos;s license and completed state security background checks while designing systems at ADT. Your data stays yours. Work is never outsourced overseas.
           </p>
         </aside>
       </section>

@@ -6,7 +6,7 @@ export const SITE = {
   sublabel: "BUSINESS OPERATIONS",
   footerTagline: "TekTagma — Business Operations & Workflow Automation",
   serviceArea:
-    "Serving Small Businesses Nationwide | In-Person Workflow Audits Across the SF Bay Area (Within 2 Hours of Sunnyvale, CA)",
+    "Serving Small Businesses Nationwide | In-Person Workflow Audits Across the SF Bay Area (Within 1 Hour of Sunnyvale, CA)",
   copyright: "© 2026 TekTagma. All rights reserved.",
 };
 
