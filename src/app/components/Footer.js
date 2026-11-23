@@ -2,6 +2,12 @@ import Link from "next/link";
 import BrandLockup from "./BrandLockup";
 import { NAV_LINKS, PRODUCT_LINKS, SITE } from "../lib/site";
 
+const FOOTER_NAV_LINKS = [
+  ...NAV_LINKS.slice(0, 2),
+  { href: "/construction", label: "Products" },
+  ...NAV_LINKS.slice(2),
+];
+
 export default function Footer() {
   return (
     <footer className="mt-auto bg-navy text-white">
@@ -16,7 +22,7 @@ export default function Footer() {
             Navigate
           </p>
           <ul className="space-y-2 text-sm text-white/80">
-            {NAV_LINKS.map((link) => (
+            {FOOTER_NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link href={link.href} className="hover:text-white hover:underline underline-offset-4">
                   {link.label}
