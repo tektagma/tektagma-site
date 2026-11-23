@@ -14,7 +14,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Book a Free 15-Minute Workflow Call"
-        subhead="Schedule a brief 15-minute call to walk through how work actually moves through your office—or request a video walkthrough of a live system."
+        subhead="Schedule a brief 15-minute call to walk through how work actually moves through your office."
       />
 
       <section className="px-6 py-16 sm:py-24">
@@ -22,7 +22,7 @@ export default function ContactPage() {
           <div>
             <h2 className="text-2xl font-bold text-navy">What to expect</h2>
             <p className="mt-4 leading-7 text-muted">
-              Tell us how work currently moves through your office—quotes, invoices, folders, phones, QuickBooks, or the construction bid-to-cash path. We will either book a 15-minute workflow call or send a video walkthrough of a live system.
+              Tell me how work currently moves through your office—quotes, invoices, folders, phones, QuickBooks, or the construction bid-to-cash path. I will follow up to confirm a quick 15-minute workflow call.
             </p>
             <p className="mt-4 leading-7 text-muted">{SITE.serviceArea}</p>
             <p className="mt-6 text-sm text-muted">

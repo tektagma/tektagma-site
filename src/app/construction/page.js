@@ -314,7 +314,7 @@ export default function ConstructionPage() {
             Ready to Eliminate Office Bottlenecks?
           </h2>
           <p className="mt-4 text-lg text-white/80">
-            Schedule a brief 15-minute call or request a video walkthrough of the live Bid-to-Cash system.
+            Schedule a brief 15-minute workflow call.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link href="/contact" className={btnPrimary}>

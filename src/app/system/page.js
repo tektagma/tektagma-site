@@ -12,7 +12,7 @@ const steps = [
   {
     title: "Centralized Job Intake & Lead Pipeline",
     body: "Log new bid requests in seconds using a simple, structured intake form—keeping every prospect, job address, and site note organized in one central Jobs & Bids pipeline with zero sticky notes or lost emails.",
-    note: "(Want leads from Yelp, Thumbtack, Google, your website, or phone calls to enter automatically? Ask about our custom Multi-Channel Lead Capture add-on.)",
+    note: "(Want leads from Yelp, Thumbtack, Google, your website, or phone calls to enter automatically? Ask about my custom Multi-Channel Lead Capture add-on.)",
   },
   {
     title: "One-Click Branded Proposals & eSign",
@@ -42,7 +42,7 @@ const steps = [
 const stack = [
   {
     title: "Built on Proven Enterprise Tools",
-    body: "Powered by our dedicated cloud automation engine alongside Airtable, Google Workspace, BoldSign, and QuickBooks Online—rock-solid business software, never experimental code.",
+    body: "Powered by a dedicated cloud automation engine alongside Airtable, Google Workspace, BoldSign, and QuickBooks Online—rock-solid business software, never experimental code.",
   },
   {
     title: "Role-Based Security",

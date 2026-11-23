@@ -1,13 +1,12 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { SITE, btnPrimary } from "../lib/site";
 
 const INITIAL = {
   name: "",
   email: "",
   company: "",
-  intent: "call",
   message: "",
   website: "",
 };
@@ -21,14 +20,6 @@ export default function ContactForm() {
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState("idle");
   const [errorMessage, setErrorMessage] = useState("");
-
-  const intentLabel = useMemo(
-    () =>
-      values.intent === "walkthrough"
-        ? "Video walkthrough of the live Bid-to-Cash system"
-        : "15-minute workflow call",
-    [values.intent]
-  );
 
   function update(field, value) {
     setValues((prev) => ({ ...prev, [field]: value }));
@@ -46,7 +37,7 @@ export default function ContactForm() {
     if (!values.name.trim()) next.name = "Enter your name.";
     if (!values.email.trim()) next.email = "Enter your email.";
     else if (!isValidEmail(values.email.trim())) next.email = "Enter a valid email address.";
-    if (!values.message.trim()) next.message = "Tell us briefly what you need.";
+    if (!values.message.trim()) next.message = "Tell me briefly what you need.";
     return next;
   }
 
@@ -64,15 +55,12 @@ export default function ContactForm() {
     setStatus("loading");
     setErrorMessage("");
 
-    const subject =
-      values.intent === "walkthrough"
-        ? "TekTagma video walkthrough request"
-        : "TekTagma 15-minute workflow call";
+    const subject = "TekTagma 15-minute workflow call";
     const body = [
       `Name: ${values.name.trim()}`,
       `Email: ${values.email.trim()}`,
       `Company / trade: ${values.company.trim() || "Not provided"}`,
-      `Request: ${intentLabel}`,
+      "Request: 15-minute workflow call",
       "",
       values.message.trim(),
     ].join("\n");
@@ -85,7 +73,7 @@ export default function ContactForm() {
     } catch {
       setStatus("error");
       setErrorMessage(
-        `We could not open your email app. Write us directly at ${SITE.email}.`
+        `I could not open your email app. Write me directly at ${SITE.email}.`
       );
     }
   }
@@ -103,7 +91,7 @@ export default function ContactForm() {
           <a className="font-medium text-navy underline underline-offset-4" href={`mailto:${SITE.email}`}>
             {SITE.email}
           </a>
-          . If it does not, send the same details there and we will follow up.
+          . If it does not, send the same details there and I will follow up.
         </p>
         <button
           type="button"
@@ -172,42 +160,6 @@ export default function ContactForm() {
         />
       </label>
 
-      <fieldset className="mt-5">
-        <legend className="text-sm font-medium text-navy">What would you like?</legend>
-        <div className="mt-3 grid gap-3 sm:grid-cols-2">
-          <label className="flex cursor-pointer items-start gap-3 rounded-md border border-navy/15 p-3 has-[:checked]:border-amber has-[:checked]:bg-amber/10">
-            <input
-              type="radio"
-              name="intent"
-              value="call"
-              checked={values.intent === "call"}
-              onChange={() => update("intent", "call")}
-              disabled={status === "loading"}
-              className="mt-1"
-            />
-            <span>
-              <span className="block font-semibold text-navy">15-minute workflow call</span>
-              <span className="text-sm text-muted">Book a free diagnostic conversation.</span>
-            </span>
-          </label>
-          <label className="flex cursor-pointer items-start gap-3 rounded-md border border-navy/15 p-3 has-[:checked]:border-amber has-[:checked]:bg-amber/10">
-            <input
-              type="radio"
-              name="intent"
-              value="walkthrough"
-              checked={values.intent === "walkthrough"}
-              onChange={() => update("intent", "walkthrough")}
-              disabled={status === "loading"}
-              className="mt-1"
-            />
-            <span>
-              <span className="block font-semibold text-navy">Video walkthrough</span>
-              <span className="text-sm text-muted">See the live Bid-to-Cash system.</span>
-            </span>
-          </label>
-        </div>
-      </fieldset>
-
       <label className="mt-5 block text-sm font-medium text-navy">
         Message
         <textarea
@@ -218,7 +170,7 @@ export default function ContactForm() {
           className={fieldClass}
           aria-invalid={Boolean(errors.message)}
           disabled={status === "loading"}
-          placeholder="Jobs, tools, or bottlenecks you want us to look at."
+          placeholder="Jobs, tools, or bottlenecks you want me to look at."
         />
         {errors.message ? <p className="mt-1 text-sm text-red-700">{errors.message}</p> : null}
       </label>
