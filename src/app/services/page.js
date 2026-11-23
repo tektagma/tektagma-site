@@ -84,7 +84,7 @@ export default function ServicesPage() {
       <PageHeader
         eyebrow="Services & Pricing"
         title="Clear, Practical Implementation — Built Around Your Existing Tools"
-        subhead="I start with a low-risk workflow audit, then give you a custom flat-rate quote. No software migration. No disruption to the Google Workspace, QuickBooks, spreadsheets, and phone system you already run."
+        subhead="I start with a free 15-minute workflow call—then give you either a flat-rate Quick Win quote or a low-risk Workflow Audit. No software migration. No disruption to the Google Workspace, QuickBooks, spreadsheets, and phone system you already run."
       />
 
       <section className="px-6 py-16 sm:py-24">
