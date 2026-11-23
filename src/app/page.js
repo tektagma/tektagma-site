@@ -217,9 +217,17 @@ export default function Home() {
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             Ready to Stop Doing the Same Work Twice?
           </h2>
-          <p className="mt-4 text-lg text-white/80">
-            Book a brief 15-minute call. We&apos;ll look at how work actually moves through your office—and what can run without you retyping it.
-          </p>
+          <div className="mt-4 space-y-2 text-lg text-white/80">
+            <p>
+              <strong className="font-semibold text-white">Know what you want?</strong> Tell me the exact task, and I’ll build it.
+            </p>
+            <p>
+              <strong className="font-semibold text-white">Have a mess, no process?</strong> I’ll design the workflow from scratch and automate it.
+            </p>
+            <p>
+              <strong className="font-semibold text-white">Not sure where you’re losing time?</strong> I’ll look at your daily operations and spot hidden bottlenecks for you.
+            </p>
+          </div>
           <Link href="/contact" className={`${btnPrimary} mt-8`}>
             Book a Free 15-Minute Workflow Call
           </Link>
